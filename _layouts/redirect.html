@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+<link rel="canonical" href="{{ page.redirect_to }}"/>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="refresh" content="0;url={{ page.redirect_to }}" />
+</head>
+<body>
+    <div id="particles-js">
+      <div class="header">
+      <div class="header-links">
+      <a href="{{ page.redirect_to }}"><span class="site-description">Clique aqui se a página não redirecionar automaticamente ;)</span><a>
+      <script>location='{{ page.redirect_to }}'</script>
+      <h1 style="padding-bottom: 1em;">
+
+  </div>
+  </div>
+  </div>
+</body>
+</html>

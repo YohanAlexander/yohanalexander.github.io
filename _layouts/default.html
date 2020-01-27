@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% if page.language %}
+<html lang="{{ page.language }}">
+{% else %}
+<html lang="pt-br">
+{% endif %}
+  {% include head.html %}
+  <body>
+    {% include svg-icons.html %}
+      {% include header.html %}
+      <section id="about">
+        {% include about.html %}
+      </section>
+      <section id="projects">
+        {% include projects.html %}
+      </section>
+        {{ content }}
+      {% include footer.html %}
+  </body>
