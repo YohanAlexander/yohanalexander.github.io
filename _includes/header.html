@@ -1,39 +1,56 @@
 <div id="particles-js">
   <div class="header">
-      <h1>
+        <h3>
+        <img width="25%" height="25%" src="{{site.logo_path | prepend: site.baseurl}}">
         <span class="site-title">{{ site.username }}</span>
-        <span class="site-description">{{ site.user_title }}</span>
-      </h1>
+        {% if page.language == "en" %}
+        <span class="site-description">{{ "Data Scientist" }}</span>
+        {% else %}
+        <span class="site-description">{{ "Cientista de dados" }}</span>
+        {% endif %}
+      </h3>
       <div class="header-icons">
         <a aria-label="Send email" title="Send me an email" target="_blank" href="mailto:yohanfranca@gmail.com">
-        <svg class="icon icon-email" fill="white"><use xlink:href="#icon-email"></use></svg>
+        <svg class="icon icon-email"><use xlink:href="#icon-email"></use></svg>
       </a>
       <a aria-label="My Instagram" title="Show my Instagram" target="_blank" href="https://www.instagram.com/yohanalexander">
-        <svg class="icon icon-instagram" fill="white"><use xlink:href="#icon-instagram"></use></svg>
+        <svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
       </a>
       <!--a aria-label="My Facebook" title="Show my Facebook" target="_blank" href="https://www.facebook.com/yohan.alexander.3">
-        <svg class="icon icon-facebook" fill="white"><use xlink:href="#icon-facebook"></use></svg>
+        <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
       </a-->
       <!--a aria-label="My Twitter" title="Follow me on Twitter" target="_blank" href="https://twitter.com/yohanalexander">
-        <svg class="icon icon-twitter" fill="white"><use xlink:href="#icon-twitter"></use></svg>
+        <svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
       </a-->
       <a aria-label="My LinkedIn" title="See my LinkedIn" target="_blank" href="https://www.linkedin.com/in/yohanalexander">
-        <svg class="icon icon-linkedin" fill="white"><use xlink:href="#icon-linkedin"></use></svg>
+        <svg class="icon icon-linkedin"><use xlink:href="#icon-linkedin"></use></svg>
       </a>
       <a aria-label="My Github" title="See my Github" target="_blank" href="https://github.com/yohanalexander">
-        <svg class="icon icon-github-alt" fill="white"><use xlink:href="#icon-github-alt"></use></svg>
+        <svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg>
       </a>
       <a aria-label="My Lattes" title="See my Lattes" target="_blank" href="http://lattes.cnpq.br/3252998540736621">
-        <svg class="icon icon-lattes" fill="white"><use xlink:href="#icon-lattes"></use></svg>
+        <svg class="icon icon-lattes"><use xlink:href="#icon-lattes"></use></svg>
       </a>
-        <a aria-label="My Resume" title="See my Resume" target="_blank" href="https://yohanalexander.github.io/docs/cv.pdf">
-        <svg class="icon icon-cv" fill="white"><use xlink:href="#icon-cv"></use></svg>
+        {% if page.language == "en" %}
+        <a aria-label="My Resume" title="See my Resume" target="_blank" href="https://yohanalexander.github.io/docs/cv-en.pdf">
+        {% else %}
+        <a aria-label="My Resume" title="See my Resume" target="_blank" href="https://yohanalexander.github.io/docs/cv-br.pdf">
+        {% endif %}
+        <svg class="icon icon-cv"><use xlink:href="#icon-cv"></use></svg>
       </a>
       </div>
       <div class="header-links">
+        {% if page.language == "en" %}
+        <a class="link" href="#about" data-scroll>About me</a>
+        <a class="link" href="#projects" data-scroll>Projects</a>
+        <a class="link" href="https://yohanalexander.github.io/ephemeral-data">Blog</a>
+        <a class="link" href="/">Português</a>
+        {% else %}
         <a class="link" href="#about" data-scroll>Sobre mim</a>
         <a class="link" href="#projects" data-scroll>Projetos</a>
         <a class="link" href="https://yohanalexander.github.io/ephemeral-data">Blog</a>
+        <span></span><a class="link" href="/en">English</a>
+        {% endif %}
       </div>
   </div>
   <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
