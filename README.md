@@ -1,3 +1,4 @@
+
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -5,24 +6,32 @@
     <img src="/assets/img/signo.png" alt="Logo" width="160" height=160">
   </a>
 
-  <h1 align="center">Portfólio</h1>
+  <h1 align="center">Portfolio</h1>
 
   <p align="center">
-    Repositório para reunir os meus projetos!
+    Computer Science Bachelor at UFS!
     <br />
 
 <!-- ABOUT THE PROJECT -->
-## Sobre mim
+## About me
 
-• Sou um desenvolvedor autodidata apaixonado pelo ecossistema Python, com experiência no uso de diversas bibliotecas como Numpy, Pandas, Matplotlib, Jupyter, Scikit learn, Seaborn, Plotly, Tensorflow, Keras, e Django.
+• I am a self-taught data science student, currently majoring in Computer Science at the Federal University of Sergipe.
   
-• Atualmente graduando em Ciência da Computação na Universidade Federal de Sergipe. Na vida acadêmica, pesquisador em nível de Iniciação Científica no Grupo de Astrofísica de Altas Energias, ASTRalE, no Departamento de Física da Universidade Federal de Sergipe.
+• In academic life, I do research at the level of Scientific Initiation in the High Energy Astrophysics Research Group, ASTRalE, in the Physics Department of the Federal University of Sergipe. Founded in 2018, the group has its activities based on space technology and astronomical observations conducted by satellites from American, European and Japanese space agencies.
   
-• Tem formação técnica em desenvolvimento de software em linguagem Python para computação científica, e análise de dados astronômicos. Apaixonado por open source, dedica seu tempo ao estudo de tecnologias para extrair informações de dados, como machine learning.
+• Passionate about the Python ecosystem, open-source and astronomical data, I dedicate my time to the study of methods to analyze and extract information from data via computational tools, such as machine learning and deep learning.
 
-## Projetos
+* [Lattes](http://lattes.cnpq.br/3252998540736621)
+* [CV](https://yohanalexander.github.io/docs/cv-en.pdf)
 
-* **Z2n Periodogram:** [Github](https://github.com/yohanalexander/z2n-periodogram)
+## Projects
 
-* **Pulsar Project:**  [Github](https://github.com/yohanalexander/pulsar-project)
+* **Z2n Periodogram:** [Source Code](https://github.com/yohanalexander/z2n-periodogram)
 
+* **Pulsar Project:**  [Source Code](https://github.com/yohanalexander/pulsar-project)
+
+## Contact
+
+* [Email](mailto:yohanfranca@gmail.com)
+* [LinkedIn](https://www.linkedin.com/in/yohanalexander)
+* [Blog](http://yohanalexander.github.io/ephemeral-data)
