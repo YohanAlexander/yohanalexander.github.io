@@ -271,6 +271,7 @@ plugins:
   - jekyll-feed
   - jekyll-redirect-from
   - jekyll-katex
+  - jekyll-scholar
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
