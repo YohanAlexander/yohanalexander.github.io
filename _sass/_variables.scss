@@ -59,6 +59,7 @@ $code-background-color      : #fafafa;
 $code-background-color-dark : $light-gray;
 $text-color                 : $dark-gray;
 $border-color               : $lighter-gray;
+$muted-text-color           : mix(#fff, $text-color, 35%) !default;
 
 $primary-color              : #7a8288;
 $success-color              : #62c462;
@@ -108,6 +109,7 @@ $medium                     : 500px;
 $medium-wide                : 550px;
 $large                      : 1200px;
 $x-large                    : 1800px;
+$max-width                  : $x-large;
 */
 
 $small                      : 600px !default;
@@ -115,6 +117,7 @@ $medium                     : 768px !default;
 $medium-wide                : 900px !default;
 $large                      : 925px !default;
 $x-large                    : 1280px !default;
+$max-width                  : $x-large !default;
 
 /*
    Grid
@@ -148,6 +151,9 @@ $susy: (
 
 $border-radius              : 4px;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$nav-height                 : 2em !default;
+$nav-toggle-height          : 2rem !default;
 $navicon-width              : 28px;
 $navicon-height             : 4px;
 $global-transition          : all 0.2s ease-in-out;
+$intro-transition           : intro 0.3s both !default;

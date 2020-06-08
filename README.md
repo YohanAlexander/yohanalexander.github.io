@@ -3,7 +3,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/yohanalexander">
-    <img src="/assets/img/signo.png" alt="Logo" width="160" height=160">
+    <img src="/images/profile.png" alt="Logo" width="160" height=160">
   </a>
 
   <h1 align="center">Portfolio</h1>
@@ -22,16 +22,12 @@
 • Passionate about the Python ecosystem, open-source and astronomical data, I dedicate my time to the study of methods to analyze and extract information from data via computational tools, such as machine learning and deep learning.
 
 * [Lattes](http://lattes.cnpq.br/3252998540736621)
-* [CV](https://yohanalexander.github.io/docs/cv-en.pdf)
 
 ## Projects
 
 * **Z2n Periodogram:** [Source Code](https://github.com/yohanalexander/z2n-periodogram)
 
-* **Pulsar Project:**  [Source Code](https://github.com/yohanalexander/pulsar-project)
-
 ## Contact
 
 * [Email](mailto:yohanfranca@gmail.com)
 * [LinkedIn](https://www.linkedin.com/in/yohanalexander)
-* [Blog](http://yohanalexander.github.io/ephemeral-data)

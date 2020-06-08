@@ -48,6 +48,9 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
+  read_more              : "enabled" # if enabled, adds a "read more" link to excerpts
+
+search                   : true #, false (default)
 
 # SEO Related
 google_site_verification :
@@ -104,7 +107,7 @@ author:
   impactstory      : # "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "yohanalexander"
-  lattes           : "https://lattes.cnpq.br/3252998540736621"
+  lattes           : "http://lattes.cnpq.br/3252998540736621"
   orcid            : "https://orcid.org/0000-0003-1413-9508"
   pinterest        :
   soundcloud       :
@@ -275,6 +278,30 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+
+
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: none
+  order: descending
+
+  source: ./_bibliography
+  bibliography: papers.bib
+  bibliography_template: bibtemplate
+
+  replace_strings: true
+  join_strings:    true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  repository: /files
+  repository_file_delimiter: "."
+
+  query: "@*"
 
 
 # Archives
