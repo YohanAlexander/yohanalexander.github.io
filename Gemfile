@@ -18,6 +18,7 @@ gem "github-pages", group: :jekyll_plugins
 gem "rake", "~> 12"
 gem "jekyll"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
+gem 'unicode_utils', require: false unless RUBY_VERSION >= '2.4'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
