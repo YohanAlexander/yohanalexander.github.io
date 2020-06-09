@@ -9,9 +9,7 @@ collection: portfolio
 [![GitHub](https://img.shields.io/github/license/yohanalexander/z2n-periodogram)](https://github.com/YohanAlexander/z2n-periodogram/blob/master/LICENSE)
 [![Documentation Status](https://readthedocs.org/projects/z2n-periodogram/badge/?version=latest)](https://z2n-periodogram.readthedocs.io/en/latest/?badge=latest)
 
-See the project on [GITHUB](https://github.com/yohanalexander/z2n-periodogram/).
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kjBOesZCoqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+See this project on [GITHUB](https://github.com/yohanalexander/z2n-periodogram/).
 
 ## About The Project
 

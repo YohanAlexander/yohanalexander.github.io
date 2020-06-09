@@ -3,8 +3,8 @@ layout: archive
 title: "CV"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
+toc: true
+toc_sticky: true
 ---
 
 {% include base_path %}
