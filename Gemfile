@@ -16,7 +16,7 @@ gem "github-pages", group: :jekyll_plugins
 # To upgrade, run `bundle update`.
 # We'll need rake to build our site in TravisCI
 gem "rake", "~> 12"
-gem "jekyll"
+gem "jekyll", "~> 3.5"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem 'unicode_utils', require: false unless RUBY_VERSION >= '2.4'
 
@@ -28,4 +28,6 @@ group :jekyll_plugins do
   gem 'hawkins'
   gem 'jekyll-katex'
   gem 'jekyll-scholar'
+  gem 'jekyll-include-cache'
+  gem "minimal-mistakes-jekyll"
 end
