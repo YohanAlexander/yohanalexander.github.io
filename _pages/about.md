@@ -4,7 +4,7 @@ title: "About"
 author_profile: true
 ---
 
-I am a self-taught data scientist, currently majoring in Computer Science at the Federal University of Sergipe. Passionate about the Python ecosystem, open source and astronomical data, I dedicate my time to the study of methods to analyse and extract information from data via computational tools, such as deep learning.
+> I am a self-taught data scientist, currently majoring in Computer Science at the Federal University of Sergipe. Passionate about the Python ecosystem, open source and astronomical data, I dedicate my time to the study of methods to analyse and extract information from data via computational tools, such as deep learning.
 
 # Tools
 

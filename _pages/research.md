@@ -8,7 +8,7 @@ toc: true
 toc_sticky: true
 ---
 
-On my academic life, I research at the level of Scientific Initiation in the High Energy Astrophysics Research Group, ASTRalE, in the Physics Department of the Federal University of Sergipe. Founded in 2018, the group has its activities based on space technology and astronomical observations conducted by satellites from American, European and Japanese space agencies.
+> On my academic life, I research at the level of Scientific Initiation in the High Energy Astrophysics Research Group, ASTRalE, in the Physics Department of the Federal University of Sergipe. Founded in 2018, the group has its activities based on space technology and astronomical observations conducted by satellites from American, European and Japanese space agencies.
 
 # Publications
 
@@ -19,7 +19,7 @@ On my academic life, I research at the level of Scientific Initiation in the Hig
 {% endif %}
 
 {% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
+  You can also find my articles on <a href="{{author.googlescholar}}">my Google Scholar profile</a>.
 {% endif %}
 
 <ul class="taxonomy__index">
