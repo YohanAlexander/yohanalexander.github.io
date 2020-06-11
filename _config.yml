@@ -62,7 +62,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 search                   : true # true, false (default)
-search_full_content      : # true, false (default)
+search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -113,7 +113,7 @@ author:
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=32xrf5IAAAAJ&hl=pt-BR"
   email            : "yohan.franca@dcomp.ufs.br"
-  researchgate     :
+  researchgate     : "https://www.researchgate.net/profile/Yohan_Alexander"
   uri              :
   bitbucket        :
   codepen          :
