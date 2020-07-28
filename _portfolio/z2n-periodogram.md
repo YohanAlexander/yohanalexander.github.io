@@ -1,6 +1,11 @@
 ---
 title: "Z2n Periodogram"
-excerpt: "A program for interactive peridogram analysis.<br/><img src='https://user-images.githubusercontent.com/39287022/80550543-cb789b00-8996-11ea-90af-fe2936fb703e.png' width='500' height='300'>"
+tagline: "A program for interactive peridogram analysis."
+excerpt: "A program for interactive peridogram analysis."
+header:
+  teaser: https://user-images.githubusercontent.com/39287022/84617670-23675480-aea6-11ea-90ac-93a32c01bb92.png
+  overlay_image: images/github.png
+  caption: "See this project on Github: [**Source Code**](https://github.com/yohanalexander/z2n-periodogram)"
 collection: portfolio
 ---
 
@@ -9,7 +14,7 @@ collection: portfolio
 [![GitHub](https://img.shields.io/github/license/yohanalexander/z2n-periodogram)](https://github.com/YohanAlexander/z2n-periodogram/blob/master/LICENSE)
 [![Documentation Status](https://readthedocs.org/projects/z2n-periodogram/badge/?version=latest)](https://z2n-periodogram.readthedocs.io/en/latest/?badge=latest)
 
-See this project on [GITHUB](https://github.com/yohanalexander/z2n-periodogram/).
+![Logo-z2n](https://user-images.githubusercontent.com/39287022/84617670-23675480-aea6-11ea-90ac-93a32c01bb92.png)
 
 ## About The Project
 
@@ -61,7 +66,7 @@ The `CLI` of the software is very interactive and it works by triggering the com
 
 Documented commands (type help <topic>):
 ========================================
-docs  plot  run  save
+docs  gauss  plot  run  save
 
 Undocumented commands:
 ======================
