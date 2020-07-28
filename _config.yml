@@ -21,7 +21,7 @@ name                     : &name "Yohan Alexander"
 description              : &description "Data Scientist"
 url                      : https://yohanalexander.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "yohanalexander/yohanalexander"
+repository               : "yohanalexander/yohanalexander.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 logo                     : "/images/favicon-96x96.png"  # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "Ephemeral Data" # overrides the website title displayed in the masthead, use " " for no title
