@@ -1,6 +1,8 @@
+[![Build Status](https://travis-ci.com/YohanAlexander/yohanalexander.github.io.svg?branch=master)](https://travis-ci.com/YohanAlexander/yohanalexander.github.io)
+
 ## Projects
 
-**See my portofolio on my site:** [Portfolio](https://yohanalexander.github.io/portfolio)
+**See my portfolio on my site:** [Portfolio](https://yohanalexander.github.io/portfolio)
 
 ## Contact
 
