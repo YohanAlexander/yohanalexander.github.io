@@ -1,6 +1,6 @@
 ## Projects
 
-**See my portofolio on my site:** [Portfolio](https://yohanalexander.github.io/portofolio)
+**See my portofolio on my site:** [Portfolio](https://yohanalexander.github.io/portfolio)
 
 ## Contact
 
