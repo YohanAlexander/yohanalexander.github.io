@@ -125,6 +125,20 @@ print_section(position_data, 'research_positions')
 ```
 
 
+
+Industry Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'industry_positions')
+```
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<br>
+<br>
+<br>
+
+
 ```{r}
 if(PDF_EXPORT){
   cat("
@@ -142,4 +156,3 @@ Links {data-icon=link}
   })
 }
 ```
-
