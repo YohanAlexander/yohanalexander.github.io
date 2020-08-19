@@ -16,7 +16,7 @@ gem "github-pages", group: :jekyll_plugins
 # To upgrade, run `bundle update`.
 # We'll need rake to build our site in TravisCI
 gem "rake", "~> 13"
-gem "jekyll", "~> 3.5"
+gem "jekyll", "~> 3.9"
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 gem 'unicode_utils', require: false unless RUBY_VERSION >= '2.4'
 
