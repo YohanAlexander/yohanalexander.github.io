@@ -14,7 +14,6 @@ toc_sticky: true
 <div class="iframe-container"
     style="overflow: hidden;
             padding-top: 150%;
-            padding-left: 150%;
             position: relative;">
     <iframe loading="lazy" src="{{base_path}}/files/cv.html"
         title="CV" frameborder="0" scrolling="auto"
