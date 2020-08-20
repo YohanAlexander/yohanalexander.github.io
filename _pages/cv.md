@@ -9,7 +9,6 @@ toc_sticky: true
 
 {% include base_path %}
 
-CV also available in [PDF]({{base_path}}/files/cv.pdf).
+[<i class='fas fa-download'></i> Download a PDF of this CV]({{base_path}}/files/cv.pdf)
 
  <iframe src="{{base_path}}/files/cv.html" title="CV" height="1100" width="900" frameborder="0" scrolling="auto"></iframe>
-

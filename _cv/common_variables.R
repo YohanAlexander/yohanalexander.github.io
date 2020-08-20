@@ -1,11 +1,7 @@
 # Common non-csv data between CV and resume
 
 # Header with description of what is trying to be accomplished with this CV/Resume
-intro_text <- "I am a self-taught data scientist, currently majoring in Computer Science at the Federal University of Sergipe. Passionate about the Python ecosystem, open source and astronomical data, I dedicate my time to the study of methods to analyse and extract information from data via computational tools, such as deep learning.
-
-On my academic life, I research at the level of Scientific Initiation in the High Energy Astrophysics Research Group, ASTRalE, in the Physics Department of the Federal University of Sergipe. Founded in 2018, the group has its activities based on space technology and astronomical observations conducted by satellites from American, European and Japanese space agencies.
-"
-
+intro_text <- "I am a full cycle software developer with experience in Python backend WEB development, continuous integration tools, Restful API's, gRPC / protocol buffers, and microservices architecture exploring Docker Containers. On my free time I dedicate my studies to methods of Data Science and Machine Learning."
 
 # Language skills for skill bars visualization
 skills <- tribble(
