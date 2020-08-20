@@ -1,1 +1,1 @@
-[![Build Status](https://travis-ci.com/YohanAlexander/yohanalexander.github.io.svg?branch=master)](https://travis-ci.com/YohanAlexander/yohanalexander.github.io)
+[![Build Status](https://travis-ci.com/YohanAlexander/yohanalexander.github.io.svg?branch=source)](https://travis-ci.com/YohanAlexander/yohanalexander.github.io)
