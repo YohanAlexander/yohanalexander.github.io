@@ -15,7 +15,7 @@ toc_sticky: true
     style="overflow: hidden;
             padding-top: 150%;
             position: relative;">
-    <iframe loading="lazy" src="{{base_path}}/files/cv.html"
+    <iframe loading="lazy" src="{{base_path}}/files/cv.pdf"
         title="CV" frameborder="0" scrolling="auto"
         style="border: 0;
             height: 100%;
