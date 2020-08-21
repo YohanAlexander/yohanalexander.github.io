@@ -67,7 +67,8 @@ Contact {#contact}
 - <i class="fa fa-envelope"></i> yohanfranca@gmail.com
 - <i class="fa fa-linkedin"></i> [yohanalexander](http://linkedin.com/in/yohanalexander)
 - <i class="fa fa-github"></i> [yohanalexander](http://github.com/yohanalexander)
-- <i class="fa fa-link"></i> [Blog/Portfolio](http://yohanalexander.github.io/)
+- <i class="fa fa-instagram"></i> [yohanalexander](http://instagram.com/yohanalexander)
+- <i class="fa fa-link"></i> [yohanalexander.github.io](http://yohanalexander.github.io/)
 - <i class="fa fa-phone"></i> +55 (79) 99864-7553
 
 
