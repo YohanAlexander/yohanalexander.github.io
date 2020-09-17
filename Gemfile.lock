@@ -233,7 +233,7 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minimal-mistakes-jekyll (4.20.1)
+    minimal-mistakes-jekyll (4.20.2)
       jekyll (>= 3.7, < 5.0)
       jekyll-feed (~> 0.1)
       jekyll-gist (~> 1.5)
