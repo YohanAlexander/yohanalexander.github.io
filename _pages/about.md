@@ -4,7 +4,7 @@ title: "About"
 author_profile: true
 ---
 
-> I am a full cycle software developer with experience in Python backend WEB development, Restful APIs, gRPC / protocol buffers, continuous integration tools, and microservices architecture exploring Docker Containers. On my free time I dedicate my studies to methods of Data Science and Machine Learning.
+> I am a software developer with experience in Python backend WEB development, Restful APIs, Golang, gRPC / protocol buffers, continuous integration tools, and microservices architecture exploring Docker Containers. On my free time I dedicate my studies to methods of Data Science and Machine Learning.
 
 # Tools
 
