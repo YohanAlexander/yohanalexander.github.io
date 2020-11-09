@@ -1,7 +1,7 @@
 # Common non-csv data between CV and resume
 
 # Header with description of what is trying to be accomplished with this CV/Resume
-intro_text <- "I am a software developer with experience in Python backend WEB development, Restful APIs, Golang, gRPC / protocol buffers, continuous integration tools, and microservices architecture exploring Docker Containers. On my free time I dedicate my studies to methods of Data Science and Machine Learning."
+intro_text <- "I am a software developer with experience in WEB development of financial services. Use of Python and Golang languages, Restful APIs, gRPC / protocol buffers, continuous integration tools, microservice architecture exploring Docker containers made available via the AWS cloud. In my spare time I dedicate my studies to Data Science and Machine Learning methods."
 
 # Language skills for skill bars visualization
 skills <- tribble(
