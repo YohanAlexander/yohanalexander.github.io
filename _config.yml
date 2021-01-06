@@ -18,7 +18,7 @@ locale: "en-US"
 title: "Yohan Alexander"
 title_separator: "-"
 name: &name "Yohan Alexander"
-description: &description "Software Developer"
+description: &description "Full Cycle Developer"
 url: https://yohanalexander.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "yohanalexander/yohanalexander.github.io"
@@ -104,12 +104,12 @@ analytics:
 author:
   name: "Yohan Alexander"
   avatar: "profile.png"
-  bio: "Software Developer"
+  bio: "Full Cycle Developer"
   location: "Aracaju-SE"
   university: "DCOMP-UFS"
   employer: "Pagueon-ma9"
   pubmed:
-  googlescholar: "https://scholar.google.com/citations?user=32xrf5IAAAAJ&hl=pt-BR"
+  googlescholar:
   email: "yohanfranca@gmail.com"
   researchgate:
   uri:
@@ -151,7 +151,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/yohanalexander"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -160,7 +160,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/yohanalexander/"
 
 # Reading Files
 include:
