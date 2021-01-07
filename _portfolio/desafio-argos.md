@@ -4,9 +4,14 @@ tagline: "API Restful para o protocolo MQTT usando arquitetura de containers."
 excerpt: "API Restful para o protocolo MQTT usando arquitetura de containers."
 header:
   teaser: https://raw.githubusercontent.com/YohanAlexander/api-mqtt/master/ARGOS.png
-  overlay_image: images/github.png
-  caption: "See this project on Github: [**Source Code**](https://github.com/yohanalexander/api-mqtt)"
+  overlay_color: "#44475a"
+  caption: ""
+  actions:
+    - label: "Github"
+      url: "https://github.com/yohanalexander/api-mqtt/"
 collection: portfolio
+toc: true
+toc_sticky: true
 ---
 
 # Desafio Argos

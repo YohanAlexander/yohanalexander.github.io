@@ -4,9 +4,18 @@ tagline: "A program for interactive peridogram analysis."
 excerpt: "A program for interactive peridogram analysis."
 header:
   teaser: https://user-images.githubusercontent.com/39287022/84617670-23675480-aea6-11ea-90ac-93a32c01bb92.png
-  overlay_image: images/github.png
-  caption: "See this project on Github: [**Source Code**](https://github.com/yohanalexander/z2n-periodogram)"
+  overlay_color: "#44475a"
+  caption: ""
+  actions:
+    - label: "Github"
+      url: "https://github.com/yohanalexander/z2n-periodogram/"
+    - label: "PyPI"
+      url: "https://pypi.org/project/z2n-periodogram/"
+    - label: "Documentation"
+      url: "https://z2n-periodogram.readthedocs.io/"
 collection: portfolio
+toc: true
+toc_sticky: true
 ---
 
 [![PyPI](https://img.shields.io/pypi/v/z2n-periodogram)](https://pypi.org/project/z2n-periodogram/)

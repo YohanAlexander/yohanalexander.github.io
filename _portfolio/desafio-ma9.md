@@ -4,9 +4,14 @@ tagline: "API Restful aninhada com Django Rest Framework."
 excerpt: "API Restful aninhada com Django Rest Framework."
 header:
   teaser: https://raw.githubusercontent.com/YohanAlexander/api-ma9/master/crud.png
-  overlay_image: images/github.png
-  caption: "See this project on Github: [**Source Code**](https://github.com/yohanalexander/api-ma9)"
+  overlay_color: "#44475a"
+  caption: ""
+  actions:
+    - label: "Github"
+      url: "https://github.com/yohanalexander/api-ma9/"
 collection: portfolio
+toc: true
+toc_sticky: true
 ---
 
 # Desafio ma9
