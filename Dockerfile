@@ -1,12 +1,16 @@
 FROM ruby:2.7
 
+WORKDIR /website
+
 RUN gem install jekyll
+
+RUN apt update && apt install -y nodejs
 
 COPY Gemfile Gemfile.lock ./
 
 RUN bundle install
 
-RUN apt update && apt install -y nodejs
+COPY . .
 
 EXPOSE 4000
 
