@@ -30,8 +30,8 @@ periods (<minutes).
 
 # <i class='fa fa-briefcase'></i> Industry Experience
 
-## Python backend Web development
+## Backend Python Developer
 > **ma9 Soluções em Tecnologia - ma9**
-* Development of Restful APIs using the Python programming language through f rameworks such as Django / Django Rest.
+* Development of Restful APIs using the Python programming language through frameworks such as Django / Django Rest.
 * Microservice architecture using Docker containers and orchestrators such as Docker-compose and Docker Swarm, made available via the AWS cloud.
 * Management of asynchronous tasks through the passing of distributed messages in queue systems using Celery.

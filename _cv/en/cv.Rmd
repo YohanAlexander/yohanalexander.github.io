@@ -1,0 +1,154 @@
+---
+title: "Yohan Alexander's CV"
+author: Yohan Alexander
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['../css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis',
+  echo = FALSE
+)
+
+library(glue)
+library(tidyverse)
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- FALSE
+
+# Holds all the links that are inserted for placement at the end
+links <- c()
+
+source('../parsing_functions.R') # Functions for building sections from CSV data
+source('common_variables.R')  # Small variables for non-csv data such as intro text
+
+# Load csv with position info
+position_data <- read_csv('positions.csv')
+```
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that.
+if(PDF_EXPORT){
+  cat("
+  <style>
+  :root{
+    --decorator-outer-offset-left: -6.5px;
+  }
+  </style>")
+}
+```
+
+Aside
+================================================================================
+
+CONTACT {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> yohanfranca@gmail.com
+- <i class="fa fa-linkedin"></i> [yohanalexander](http://linkedin.com/in/yohanalexander)
+- <i class="fa fa-github"></i> [yohanalexander](http://github.com/yohanalexander)
+- <i class="fa fa-instagram"></i> [yohanalexander](http://instagram.com/yohanalexander)
+- <i class="fa fa-link"></i> [yohanalexander.github.io](http://yohanalexander.github.io/)
+- <i class="fa fa-phone"></i> +55 (79) 99864-7553
+
+LANGUAGES {#languages}
+--------------------------------------------------------------------------------
+```{r}
+cat(sanitize_links(languages))
+```
+
+SKILLS {#skills}
+--------------------------------------------------------------------------------
+```{r}
+cat(sanitize_links(skills))
+```
+
+TOOLS {#tools}
+--------------------------------------------------------------------------------
+
+```{r}
+build_skill_bars(tools)
+```
+
+DISCLAIMER {#disclaimer}
+--------------------------------------------------------------------------------
+
+Made with the R package [**pagedown**](https://github.com/rstudio/pagedown).
+
+Last updated on `r Sys.Date()`.
+
+Main
+================================================================================
+
+YOHAN ALEXANDER {#title}
+--------------------------------------------------------------------------------
+### <i class="fa fa-user" aria-hidden="true"></i> FULL CYCLE DEVELOPER
+
+```{r}
+cat(sanitize_links(intro_text))
+```
+
+EDUCATION {data-icon=graduation-cap}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'education')
+```
+
+RESEARCH EXPERIENCES {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'research')
+```
+
+INDUSTRY EXPERIENCES {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'industry')
+```
+
+<!--
+PROJECTS {data-icon=archive}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'projects')
+```
+
+PUBLICATIONS {data-icon=file-text}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'publications')
+```
+-->
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<br>
+<br>
+<br>
+
+```{r}
+if(PDF_EXPORT){
+  cat("
+
+Links {data-icon=link}
+--------------------------------------------------------------------------------
+
+<br>
+
+
+")
+
+  walk2(links, 1:length(links), function(link, index){
+    print(glue('{index}. {link}'))
+  })
+}
+```
