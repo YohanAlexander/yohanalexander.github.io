@@ -22,11 +22,11 @@ toc_sticky: true
 
 # Databases
 
-* SQL
+## SQL
 ![Mysql]({{base_path}}/images/devicons/mysql/mysql-original-wordmark.svg){:height="100px" width="100px"}
 ![Postgresql]({{base_path}}/images/devicons/postgresql/postgresql-original-wordmark.svg){:height="100px" width="100px"}
 
-* NoSQL
+## NoSQL
 ![Redis]({{base_path}}/images/devicons/redis/redis-original-wordmark.svg){:height="100px" width="100px"}
 
 # DevOps Tools
@@ -41,3 +41,39 @@ toc_sticky: true
 # Cloud Computing Tools
 ![AWS]({{base_path}}/images/devicons/amazonwebservices/amazonwebservices-original-wordmark.svg){:height="100px" width="100px"}
 ![Heroku]({{base_path}}/images/devicons/heroku/heroku-original-wordmark.svg){:height="100px" width="100px"}
+
+{% comment %}
+
+# Soft Skills
+
+## [Design Patterns]({{base_path}}/tags/#design-patterns)
+
+> [![Design Patterns](https://refactoring.guru/images/patterns/book/web-cover-en.png){:height="100px" width="100px"}](https://refactoring.guru/design-patterns/book/)
+: <i class="fa fa-book" ></i> _Books I've read on the topic_
+
+## [Clean Code]({{base_path}}/tags/#clean-code)
+
+> [![Clean Code](https://m.media-amazon.com/images/I/41SH-SvWPxL.jpg){:height="100px" width="100px"}](https://www.amazon.com.br/dp/B001GSTOAM/)
+: <i class="fa fa-book" ></i> _Books I've read on the topic_
+
+## [Clean Architecture]({{base_path}}/tags/#clean-architecture)
+
+> [![Clean Architecture](https://m.media-amazon.com/images/I/411csr6Nn0L.jpg){:height="100px" width="100px"}](https://www.amazon.com.br/dp/B075LRM681/)
+: <i class="fa fa-book" ></i> _Books I've read on the topic_
+
+## [TDD]({{base_path}}/tags/#tdd) (Test Driven Development)
+
+> [![TDD](https://images-na.ssl-images-amazon.com/images/I/41pO5GqNtzL.jpg){:height="100px" width="100px"}](https://www.amazon.com.br/dp/0321146530/)
+: <i class="fa fa-book" ></i> _Books I've read on the topic_
+
+## [BDD]({{base_path}}/tags/#bdd) (Behavior Driven Development)
+
+> [![BDD](https://images-na.ssl-images-amazon.com/images/I/41RBIJYTR-L.jpg){:height="100px" width="100px"}](https://www.amazon.com.br/dp/161729165X)
+: <i class="fa fa-book" ></i> _Books I've read on the topic_
+
+## [DDD]({{base_path}}/tags/#ddd) (Domain Driven Design)
+
+> [![DDD](https://m.media-amazon.com/images/I/51OWGtzQLLL.jpg){:height="100px" width="100px"}](https://www.amazon.com.br/dp/B00794TAUG/) [![DDD](https://m.media-amazon.com/images/I/51p16XLhuiL.jpg){:height="100px" width="100px"}](https://www.amazon.com.br/dp/B00BCLEBN8/)
+: <i class="fa fa-book" ></i> _Books I've read on the topic_
+
+{% endcomment %}
