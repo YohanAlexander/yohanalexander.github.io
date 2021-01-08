@@ -18,7 +18,9 @@ rmarkdown::render("cv.Rmd",
 
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
-                       output = "../files/cv.pdf")
+                       output = "../files/cv.pdf",
+                       #browser = 'chromium',
+                       extra_args = '--no-sandbox')
 
 # Knit the HTML version
 rmarkdown::render("cv-br.Rmd",
@@ -33,5 +35,7 @@ rmarkdown::render("cv-br.Rmd",
 
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
-                       output = "../files/cv-br.pdf")
+                       output = "../files/cv-br.pdf",
+                       #browser = 'chromium',
+                       extra_args = '--no-sandbox')
 
