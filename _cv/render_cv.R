@@ -23,13 +23,13 @@ pagedown::chrome_print(input = tmp_html_cv_loc,
                        extra_args = '--no-sandbox') #running inside docker container
 
 # Knit the HTML version
-rmarkdown::render("_cv/pt-br/cv-br.Rmd",
+rmarkdown::render("_cv/br/cv-br.Rmd",
                   params = list(pdf_mode = FALSE),
                   output_file = "../../files/cv-br.html")
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
-rmarkdown::render("_cv/pt-br/cv-br.Rmd",
+rmarkdown::render("_cv/br/cv-br.Rmd",
                   params = list(pdf_mode = TRUE),
                   output_file = tmp_html_cv_loc)
 
