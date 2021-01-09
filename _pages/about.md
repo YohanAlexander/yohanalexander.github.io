@@ -1,9 +1,9 @@
 ---
 permalink: /
 title: "About Me"
-author_profile: true
 toc: true
 toc_sticky: true
+lang: en
 ---
 
 {% include base_path %}

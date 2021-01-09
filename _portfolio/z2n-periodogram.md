@@ -4,8 +4,8 @@ tagline: "A program for interactive peridogram analysis."
 excerpt: "A program for interactive peridogram analysis."
 header:
   teaser: https://user-images.githubusercontent.com/39287022/84617670-23675480-aea6-11ea-90ac-93a32c01bb92.png
-  overlay_color: "#44475a"
-  caption: ""
+  overlay_image: https://kinsta.com/pt/wp-content/uploads/sites/3/2019/06/que-e-o-github-1024x512.png
+  caption: "Photo credit: [**Kinsta**](https://kinsta.com/pt/base-de-conhecimento/que-github/)"
   actions:
     - label: "Github"
       url: "https://github.com/yohanalexander/z2n-periodogram/"
@@ -14,8 +14,6 @@ header:
     - label: "Documentation"
       url: "https://z2n-periodogram.readthedocs.io/"
 collection: portfolio
-toc: true
-toc_sticky: true
 ---
 
 [![PyPI](https://img.shields.io/pypi/v/z2n-periodogram)](https://pypi.org/project/z2n-periodogram/)

@@ -1,14 +1,15 @@
 ---
 title: "CV"
 permalink: /cv/
-author_profile: true
 toc: true
 toc_sticky: true
+lang: en
 ---
 
 {% include base_path %}
 
-[<i class='fas fa-download'></i> Download a PDF of this CV]({{base_path}}/files/cv.pdf)
+> <i class='fas fa-download'></i> Download a PDF of this CV
+: [🇺🇸 English]({{base_path}}/files/cv/en/cv.pdf) [🇧🇷 Português]({{base_path}}/files/cv/pt-br/cv.pdf)
 
 # <i class='fa fa-graduation-cap'></i> Education
 

@@ -4,14 +4,12 @@ tagline: "API de transferência entre contas internas de um banco digital."
 excerpt: "API de transferência entre contas internas de um banco digital."
 header:
   teaser: https://user-images.githubusercontent.com/39287022/101106335-95e00400-35ae-11eb-8abd-b710f306dc0d.png
-  overlay_color: "#44475a"
-  caption: ""
+  overlay_image: https://kinsta.com/pt/wp-content/uploads/sites/3/2019/06/que-e-o-github-1024x512.png
+  caption: "Photo credit: [**Kinsta**](https://kinsta.com/pt/base-de-conhecimento/que-github/)"
   actions:
     - label: "Github"
       url: "https://github.com/YohanAlexander/desafio-banking-go/"
 collection: portfolio
-toc: true
-toc_sticky: true
 ---
 
 # API Restful simulando um banco digital
