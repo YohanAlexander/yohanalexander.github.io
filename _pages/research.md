@@ -5,6 +5,7 @@ author_profile: true
 years: [2020, 2019]
 toc: true
 toc_sticky: true
+lang: en
 ---
 
 <ul class="taxonomy__index">
