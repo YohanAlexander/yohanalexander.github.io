@@ -22,8 +22,8 @@ description: &description "Full Cycle Developer"
 url: https://yohanalexander.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: "" # the subpath of your site, e.g. "/blog"
 repository: "yohanalexander/yohanalexander.github.io"
-teaser: "/images/favicon-96x96.png" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-logo: "/images/favicon-96x96.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+teaser: "/images/favicons/favicon.ico" # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
+logo: "/images/favicons/favicon.ico" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: "Yohan Alexander" # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs: true # true, false (default)
 words_per_minute: 200
