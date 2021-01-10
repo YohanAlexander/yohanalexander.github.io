@@ -8,7 +8,7 @@
 # Knit the HTML version
 rmarkdown::render("_cv/en/cv.Rmd",
                   params = list(pdf_mode = FALSE),
-                  output_file = "../../files/cv.html")
+                  output_file = "../../files/cv/en/cv.html")
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
@@ -18,24 +18,24 @@ rmarkdown::render("_cv/en/cv.Rmd",
 
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
-                       output = "files/cv.pdf",
+                       output = "files/cv/en/cv.pdf",
                        #browser = 'chromium',
                        extra_args = '--no-sandbox') #running inside docker container
 
 # Knit the HTML version
-rmarkdown::render("_cv/br/cv-br.Rmd",
+rmarkdown::render("_cv/pt-br/cv.Rmd",
                   params = list(pdf_mode = FALSE),
-                  output_file = "../../files/cv-br.html")
+                  output_file = "../../files/cv/pt-br/cv.html")
 
 # Knit the PDF version to temporary html location
 tmp_html_cv_loc <- fs::file_temp(ext = ".html")
-rmarkdown::render("_cv/br/cv-br.Rmd",
+rmarkdown::render("_cv/pt-br/cv.Rmd",
                   params = list(pdf_mode = TRUE),
                   output_file = tmp_html_cv_loc)
 
 # Convert to PDF using Pagedown
 pagedown::chrome_print(input = tmp_html_cv_loc,
-                       output = "files/cv-br.pdf",
+                       output = "files/cv/pt-br/cv.pdf",
                        #browser = 'chromium',
                        extra_args = '--no-sandbox') #running inside docker container
 
