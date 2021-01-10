@@ -11,7 +11,7 @@
 */
 
 @charset "utf-8";
-@import "skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "skins/{{ site.minimal_mistakes_skin_dark | default: 'default' }}"; // skin
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
 @import "variables";

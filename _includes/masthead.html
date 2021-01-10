@@ -21,9 +21,14 @@
         {% if site.search == true %}
         <button class="search__toggle" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
-          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 15.99 16">
             <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
           </svg>
+        </button>
+        {% endif %}
+        {% if site.minimal_mistakes_skin_dark %}
+        <button class="darkmode__toggle" type="button" onclick="node1=document.getElementById('theme_source');node2=document.getElementById('theme_source_2');if(node1.getAttribute('rel')=='stylesheet'){node1.setAttribute('rel', 'stylesheet alternate'); node2.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'dark');}else{node2.setAttribute('rel', 'stylesheet alternate'); node1.setAttribute('rel', 'stylesheet');sessionStorage.setItem('theme', 'light');} return false;">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1472 1536"><path d="M1262 1175q-54 9-110 9q-182 0-337-90T570 849t-90-337q0-192 104-357q-201 60-328.5 229T128 768q0 130 51 248.5t136.5 204t204 136.5t248.5 51q144 0 273.5-61.5T1262 1175zm203-85q-94 203-283.5 324.5T768 1536q-156 0-298-61t-245-164t-164-245T0 768q0-153 57.5-292.5t156-241.5T449 69.5T739 1q44-2 61 39q18 41-15 72q-86 78-131.5 181.5T608 512q0 148 73 273t198 198t273 73q118 0 228-51q41-18 72 13q14 14 17.5 34t-4.5 38z" transform="translate(-.01)"/></svg>
         </button>
         {% endif %}
         <button class="greedy-nav__toggle hidden" type="button">
