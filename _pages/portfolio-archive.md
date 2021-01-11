@@ -7,4 +7,3 @@ entries_layout: grid
 classes: wide
 lang: en
 ---
-

@@ -1,12 +1,13 @@
 ---
-title: "Research"
-permalink: /research/
-author_profile: true
+title: "Publications"
+permalink: /publications/
 years: [2020, 2019]
 toc: true
 toc_sticky: true
 lang: en
 ---
+
+> Those are some of my most recent publications. Here you can find articles that I authored or co-authored, presentations of my public talks, and any artifact produced by my work in general.
 
 <ul class="taxonomy__index">
   {% for y in page.years %}

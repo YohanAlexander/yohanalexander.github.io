@@ -2,11 +2,11 @@
 
 main:
 
-  - title: "About"
+  - title: "About Me"
     url: /
 
-  - title: "Research"
-    url: /research/
+  - title: "Publications"
+    url: /publications/
 
   - title: "Portfolio"
     url: /portfolio/
