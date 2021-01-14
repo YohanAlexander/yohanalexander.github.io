@@ -8,7 +8,7 @@ header:
   caption: "Photo credit: [**Kinsta**](https://kinsta.com/pt/base-de-conhecimento/que-github/)"
   actions:
     - label: "Github"
-      url: "https://github.com/YohanAlexander/desafio-banking-go/"
+      url: "https://github.com/YohanAlexander/digital-banking/"
 collection: portfolio
 ---
 
