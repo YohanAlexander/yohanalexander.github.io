@@ -8,7 +8,7 @@ lang: en
 
 {% include base_path %}
 
-> I am a software developer with experience in Python backend WEB development, Restful APIs, Golang, gRPC / protocol buffers, continuous integration tools, and microservices architecture exploring Docker Containers. On my free time I dedicate my studies to methods of Data Science and Machine Learning.
+> Software engineer with experience in backend development for the WEB in a microservice architecture and AWS cloud. Use of Python and Golang languages with Clean Architecture and TDD, REST APIs, gRPC, CI / CD tools, DevOps tools, messaging, orchestrators and observability (Linux, Docker, Grafana, RabbitMQ, Kafka).
 
 # Languages
 
