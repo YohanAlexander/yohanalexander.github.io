@@ -13,10 +13,10 @@ lang: en
 
 # <i class='fa fa-graduation-cap'></i> Education
 
-## Bachelor at Computer Science
+## Bachelor in Computer Science
 > **Federal University of Sergipe - DCOMP**
 * Development of technical skills in design and analysis of algorithms.
-* Contribution to the academic community through research at the level of scienti c initiation.
+* Contribution to the academic community through research at the level of scientific initiation.
 * Development of skills in interdisciplinary thinking, through participation in the High Energy Astrophysics Research Group.
 
 # <i class='fa fa-laptop'></i> Research Experience
