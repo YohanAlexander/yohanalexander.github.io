@@ -1,0 +1,30 @@
+/* ==========================================================================
+    Dracula skin
+   ========================================================================== */
+
+/* Colors */
+$background-color: #282a36 !default;
+$text-color: #f8f8f2 !default;
+$primary-color: #50fa7b !default;
+$border-color: mix(#bd93f9, $background-color, 20%) !default;
+$code-background-color: mix(#282a36, $background-color, 15%) !default;
+$code-background-color-dark: mix(#282a36, $background-color, 20%) !default;
+$form-background-color: mix(#282a36, $background-color, 15%) !default;
+$footer-background-color: mix(#282a36, $background-color, 30%) !default;
+$link-color: mix($primary-color, $text-color, 40%) !default;
+$link-color-hover: mix(#f8f8f2, $link-color, 25%) !default;
+$link-color-visited: mix(#282a36, $link-color, 25%) !default;
+$masthead-link-color: $text-color !default;
+$masthead-link-color-hover: mix(#282a36, $text-color, 20%) !default;
+$navicon-link-color-hover: mix(#282a36, $background-color, 30%) !default;
+
+.author__urls.social-icons i,
+.author__urls.social-icons .svg-inline--fa,
+.page__footer-follow .social-icons i,
+.page__footer-follow .social-icons .svg-inline--fa  {
+  color: inherit;
+}
+
+.ais-search-box .ais-search-box--input {
+  background-color: $form-background-color;
+}
