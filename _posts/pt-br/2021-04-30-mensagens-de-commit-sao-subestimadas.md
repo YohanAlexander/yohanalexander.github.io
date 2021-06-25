@@ -47,7 +47,7 @@ Sabe quando você se atrapalha muito na hora de escrever uma mensagem porque nad
 
 Commits que englobam muitas mudanças são uma prática ruim de versionamento, e a própria confusão ao criar uma mensagem já indica isso. A lógica das alterações devem ser divididas em [átomos](https://www.freshconsulting.com/atomic-commits/), unidades bem simples que implementam uma única funcionalidade ou corrigem um erro específico. E os commits são uma instância dessas alterações, uma representação simplificada do que a lógica completa representa.
 
-Em posts futuros falarei sobre como usar a ferramenta do [GIT]({{base_path}}/tags/#git) de forma eficiente e a seu favor, exemplificando quando, onde e como commitar.
+Em posts futuros falarei sobre como usar a ferramenta do [GIT](/tags/#git) de forma eficiente e a seu favor, exemplificando quando, onde e como commitar.
 
 * **Imprudência**
 

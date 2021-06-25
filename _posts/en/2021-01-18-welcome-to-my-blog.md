@@ -31,6 +31,6 @@ The main idea is to share any insigth or interesting technology I discovered whi
 Posts about new tools and technologies are likely to be shorter to keep things straight, and in a format similar to tutorials, to show the reader the way to get the same results I did.
 
 Eventually I’ll also talk more openly on more theoretical issues,
-such as good programming practices ([Design Patterns]({{base_path}}/tags/#design-patterns), [Clean Code]({{base_path}}/tags/#clean-code), [Clean Architecture]({{base_path}}/tags/#clean-architecture), [TDD]({{base_path}}/tags/#tdd), [BDD]({{base_path}}/tags/#bdd), [DDD]({{base_path}}/tags/#ddd)) and the challenges on designing scalable software, in addition to information security and data science.
+such as good programming practices ([Design Patterns](/tags/#design-patterns), [Clean Code](/tags/#clean-code), [Clean Architecture](/tags/#clean-architecture), [TDD](/tags/#tdd), [BDD](/tags/#bdd), [DDD](/tags/#ddd)) and the challenges on designing scalable software, in addition to information security and data science.
 
 In a next post I will talk about how I built the entire infrastructure for making this blog available, so that the writing is minimalist and quite simple.

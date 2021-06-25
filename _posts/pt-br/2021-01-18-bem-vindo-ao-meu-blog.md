@@ -31,6 +31,6 @@ A ideia é compartilhar qualquer conhecimento interessante sobre tecnologia que 
 As postagens sobre ferramentas e tecnologias novas provavelmente serão mais curtas para manter as coisas direto ao ponto, e em um formato parecido com tutoriais, para indicar ao leitor o caminho para obter os mesmos resultados que obtive.
 
 Eventualmente falarei também de forma mais aberta sobre assuntos mais teóricos,
-como boas práticas de programação ([Design Patterns]({{base_path}}/tags/#design-patterns), [Clean Code]({{base_path}}/tags/#clean-code), [Clean Architecture]({{base_path}}/tags/#clean-architecture), [TDD]({{base_path}}/tags/#tdd), [BDD]({{base_path}}/tags/#bdd), [DDD]({{base_path}}/tags/#ddd)) e os desafios na construção de softwares escaláveis, além de segurança da informação e ciência de dados.
+como boas práticas de programação ([Design Patterns](/tags/#design-patterns), [Clean Code](/tags/#clean-code), [Clean Architecture](/tags/#clean-architecture), [TDD](/tags/#tdd), [BDD](/tags/#bdd), [DDD](/tags/#ddd)) e os desafios na construção de softwares escaláveis, além de segurança da informação e ciência de dados.
 
 Em um próximo post falarei sobre como construí toda a infraestrutura de disponibilização desse blog, para que a escrita seja minimalista e bastante simples.

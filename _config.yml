@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dracula" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Evolutionary Software"
+title                    : "Seamless Coder"
 title_separator          : "-"
-subtitle                 : "Breaking the delusion of set in stone software architecture" # site tagline that appears below site title in masthead
+subtitle                 : "Breaking the delusion of set in stone software design, architecture and development" # site tagline that appears below site title in masthead
 name                     : &name "Yohan Alexander"
-description              : &description "Breaking the delusion of set in stone software architecture"
+description              : &description "Breaking the delusion of set in stone software design, architecture and development"
 url                      : "https://yohanalexander.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yohanalexander/yohanalexander.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -76,7 +76,7 @@ facebook:
   username               : &facebook
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/images/favicons/favicon.ico" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

@@ -16,7 +16,7 @@ header:
 collection: portfolio
 ---
 
-> <i class='fas fa-download'></i> Download the article on [PDF](/assets/files/z2n.pdf)
+> <i class='fas fa-download'></i> Download the article on [PDF](/assets/files/z2n.pdf){: .btn .btn--danger .btn--large}
 {: .notice--info}
 
 [![PyPI](https://img.shields.io/pypi/v/z2n-periodogram)](https://pypi.org/project/z2n-periodogram/)
