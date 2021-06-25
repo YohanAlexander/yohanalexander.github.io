@@ -20,7 +20,7 @@ tags:
   - good-practices
 categories:
   - post
-lang: en
+  - en
 ---
 
 Any developer who has spent the minimum amount of time browsing a repository's history knows: **commit messages are important**.

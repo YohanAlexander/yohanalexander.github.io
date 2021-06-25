@@ -1,28 +1,62 @@
 /* ==========================================================================
-    Dracula skin
+   Dracula skin
    ========================================================================== */
 
 /* Colors */
-$background-color: #282a36 !default;
+$background-color: #44475a !default;
 $text-color: #f8f8f2 !default;
 $primary-color: #50fa7b !default;
-$border-color: mix(#bd93f9, $background-color, 20%) !default;
+$border-color: mix(#ffb86c, $background-color, 20%) !default;
 $code-background-color: mix(#282a36, $background-color, 15%) !default;
 $code-background-color-dark: mix(#282a36, $background-color, 20%) !default;
 $form-background-color: mix(#282a36, $background-color, 15%) !default;
 $footer-background-color: mix(#282a36, $background-color, 30%) !default;
 $link-color: mix($primary-color, $text-color, 40%) !default;
-$link-color-hover: mix(#f8f8f2, $link-color, 25%) !default;
+$link-color-hover: mix(#ffb86c, $link-color, 25%) !default;
 $link-color-visited: mix(#282a36, $link-color, 25%) !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: mix(#282a36, $text-color, 20%) !default;
 $navicon-link-color-hover: mix(#282a36, $background-color, 30%) !default;
+
+/* notices */
+$notice-background-mix: 90% !default;
+$code-notice-background-mix: 95% !default;
+
+/* dracula syntax highlighting (base16) */
+/* https://github.com/dracula/base16-dracula-scheme */
+$base00: #282a36;
+$base01: #3a3c4e;
+$base02: #4d4f68;
+$base03: #626483;
+$base04: #62d6e8;
+$base05: #e9e9f4;
+$base06: #f1f2f8;
+$base07: #f7f7fb;
+$base08: #ea51b2;
+$base09: #b45bcf;
+$base0a: #00f769;
+$base0b: #ebff87;
+$base0c: #a1efe4;
+$base0d: #62d6e8;
+$base0e: #b45bcf;
+$base0f: #00f769;
 
 .author__urls.social-icons i,
 .author__urls.social-icons .svg-inline--fa,
 .page__footer-follow .social-icons i,
 .page__footer-follow .social-icons .svg-inline--fa  {
   color: inherit;
+}
+
+/* next/previous buttons */
+.pagination--pager {
+  color: $text-color;
+  background-color: $footer-background-color;
+  border-color: transparent;
+
+  &:visited {
+    color: $text-color;
+  }
 }
 
 .ais-search-box .ais-search-box--input {

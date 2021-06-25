@@ -20,7 +20,7 @@ tags:
   - good-practices
 categories:
   - post
-lang: pt-BR
+  - pt-BR
 ---
 
 Todo desenvolvedor que já passou o mínimo de tempo navegando o histórico de um repositório sabe: **mensagens de commits são importantes**.

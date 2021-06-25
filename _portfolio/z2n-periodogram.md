@@ -16,6 +16,9 @@ header:
 collection: portfolio
 ---
 
+> <i class='fas fa-download'></i> Download the article on [PDF](/assets/files/z2n.pdf)
+{: .notice--info}
+
 [![PyPI](https://img.shields.io/pypi/v/z2n-periodogram)](https://pypi.org/project/z2n-periodogram/)
 [![GitHub issues](https://img.shields.io/github/issues/yohanalexander/z2n-periodogram)](https://github.com/yohanalexander/z2n-periodogram/issues)
 [![GitHub](https://img.shields.io/github/license/yohanalexander/z2n-periodogram)](https://github.com/YohanAlexander/z2n-periodogram/blob/master/LICENSE)

@@ -19,7 +19,7 @@ tags:
   - technology
 categories:
   - post
-lang: en
+  - en
 ---
 
 Welcome to my blog!
