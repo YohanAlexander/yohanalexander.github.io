@@ -18,8 +18,8 @@ tags:
   - hello-world
   - technology
 categories:
-  - post
-  - pt-BR
+  - posts
+  - pt-br
 ---
 
 Bem vindo ao meu blog!

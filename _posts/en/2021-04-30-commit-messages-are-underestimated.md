@@ -19,7 +19,7 @@ tags:
   - github
   - good-practices
 categories:
-  - post
+  - posts
   - en
 ---
 

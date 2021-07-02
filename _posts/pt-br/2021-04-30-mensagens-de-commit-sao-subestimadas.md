@@ -19,8 +19,8 @@ tags:
   - github
   - good-practices
 categories:
-  - post
-  - pt-BR
+  - posts
+  - pt-br
 ---
 
 Todo desenvolvedor que já passou o mínimo de tempo navegando o histórico de um repositório sabe: **mensagens de commits são importantes**.

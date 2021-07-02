@@ -18,7 +18,7 @@ tags:
   - hello-world
   - technology
 categories:
-  - post
+  - posts
   - en
 ---
 
