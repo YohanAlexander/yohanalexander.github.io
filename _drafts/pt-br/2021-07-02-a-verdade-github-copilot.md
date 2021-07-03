@@ -64,7 +64,7 @@ Mas será que as intenções da Microsoft (uma empresa multi-bilionária) são p
 
 A princípio você pode rejeitar a ideia de que seu emprego vai ser tomado por uma IA geradora de códigos, afinal um programador teve que criar o código da IA em primeiro lugar, certo?
 
-Errado. A gente tende a se prender a uma mentira confortável para ter um falso senso de segurança, mas na realidade **a automação cognitiva já vem acontecendo de longa data**, como é explicado neste excelente vídeo do canal CGP Grey.
+Errado. A gente tende a se prender a uma mentira confortável para ter um falso senso de segurança, mas na realidade **a automação cognitiva já vem acontecendo de longa data**, como é explicado neste excelente vídeo do canal [CGP Grey](https://www.youtube.com/user/cgpgrey).
 
 {% include video id="7Pq-S557XQU" provider="youtube" %}
 
@@ -72,7 +72,7 @@ Por mais especializada que seja uma mão de obra, ela acaba sendo substituída, 
 
 # A verdade distópica
 
-O paralelo entre a inevitabilidade da automação, e o que a IA desenvolvida para o Github Copilot representam é muito bem traçada neste vídeo do canal Fireship. E após analisar o passado, fica bem mais difícil acreditar em um futuro otimista.
+O paralelo entre a inevitabilidade da automação, e o que a IA desenvolvida para o Github Copilot representam é muito bem traçada neste vídeo do canal [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA). E após analisar o passado, fica bem mais difícil acreditar em um futuro otimista.
 
 {% include video id="4duqI8WyfqE" provider="youtube" %}
 
