@@ -25,6 +25,7 @@ tags:
 - automation
 - github
 categories:
+- tech
 - pt-br
 - posts
 
