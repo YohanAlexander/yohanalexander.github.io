@@ -78,7 +78,7 @@ For now, the tool will be used to help programmers perform their role better, bu
 
 But on the bright side we will have more free time :smile:
 
-# Additional readings
+# Further reading
 
 * [https://copilot.github.com/](https://copilot.github.com/ "https://copilot.github.com/")
 * [https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/](https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/ "https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/")
