@@ -50,4 +50,5 @@ fields:
   name: categories
   label: categories
 pages:
+- _posts/en/2021-07-02-the-truth-github-copilot.md
 - _posts/pt-br/2021-07-02-a-verdade-github-copilot.md
