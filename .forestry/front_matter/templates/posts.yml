@@ -49,3 +49,5 @@ fields:
 - type: list
   name: categories
   label: categories
+pages:
+- _posts/pt-br/a-verdade-distopica-sobre-o-github-copilot-programadores-nao-precisam-se-candidatar.md
