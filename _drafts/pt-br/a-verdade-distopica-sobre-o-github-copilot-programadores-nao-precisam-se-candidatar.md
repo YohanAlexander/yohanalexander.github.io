@@ -5,12 +5,17 @@ tagline: " Porquê os programadores deveriam ficar preocupados com a acensão da
 excerpt: " Porquê os programadores deveriam ficar preocupados com a acensão das IAs
   geradoras de código?"
 header:
-  teaser: ''
-  overlay_image: ''
-  overlay_filter: 
-  caption: ''
-  actions: []
+  teaser: "/assets/head2x.png"
+  overlay_image: "/assets/head2x.png"
+  overlay_filter: 0.6
+  caption: 'Photo credit: [**GithubCopilot**](https://copilot.github.com/head2x.png)'
+  actions:
+  - label: "\U0001F1FA\U0001F1F8 English"
+    url: "/posts/2021/07/the-truth-github-copilot/"
+  - label: "\U0001F1E7\U0001F1F7 Português"
+    url: "/posts/2021/07/a-verdade-github-copilot/"
 date: 2021-07-02 00:00:00 -0300
+permalink: "/posts/:year/:month/:slug/"
 tags:
 - editor-tools
 - ai
