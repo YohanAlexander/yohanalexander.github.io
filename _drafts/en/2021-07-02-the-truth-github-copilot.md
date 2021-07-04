@@ -36,7 +36,7 @@ This week the arrival of [Github Copilot](https://copilot.github.com/ "Github Co
 
 # How does Copilot work?
 
-The tool is the result of an investment of [$1 billion](https://news.microsoft.com/2019/07/22/openai-forms-exclusive-computing-partnership-with-microsoft-to-build-new- azure-ai-supercomputing-technologies/) from [Microsoft](https://www.microsoft.com/ "Microsoft") at OpenAI, a company specialized in the development and research of `Artificial General Intelligence`. "`Copilot` automatically fills in code snippets, suggest new lines, and can even write entire functions based on the description provided", said Github CEO, Nat Friedman, in a [blog post](https://github. blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/ "blog post").
+The tool is the result of an investment of [$1 billion](https://news.microsoft.com/2019/07/22/openai-forms-exclusive-computing-partnership-with-microsoft-to-build-new- azure-ai-supercomputing-technologies/) from [Microsoft](https://www.microsoft.com/ "Microsoft") at OpenAI, a company specialized in the development and research of `Artificial General Intelligence`. "`Copilot` automatically fills in code snippets, suggests new lines, and can even write entire functions based on the description provided", said Github CEO, Nat Friedman, in a [blog post](https://github. blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/ "blog post").
 
 ![Github Copilot](https://copilot.github.com/diagram.png)
 
