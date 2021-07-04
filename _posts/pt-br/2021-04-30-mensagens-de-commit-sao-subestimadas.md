@@ -1,28 +1,31 @@
 ---
-title: "Mensagens de commit são subestimadas (e não deveriam)"
-tagline: "Porquê mensagens de commit são importantes e como se tornar um artesão ao escrevê-lás."
-excerpt: "Porquê mensagens de commit são importantes e como se tornar um artesão ao escrevê-lás."
+title: Mensagens de commit são subestimadas (e não deveriam)
+tagline: Porquê mensagens de commit são importantes e como se tornar um artesão ao
+  escrevê-lás.
+excerpt: Porquê mensagens de commit são importantes e como se tornar um artesão ao
+  escrevê-lás.
 header:
   teaser: https://chris.beams.io/content/images/size/w2000/2021/01/git_commit_2x.png
   overlay_image: https://chris.beams.io/content/images/size/w2000/2021/01/git_commit_2x.png
-  overlay_filter: 0.6
-  caption: "Photo credit: [**xcd**](https://xkcd.com/1296/)"
+  overlay_filter: "0.6"
+  caption: 'Photo credit: [**xcd**](https://xkcd.com/1296/)'
   actions:
-    - label: "🇺🇸 English"
-      url: /posts/2021/04/commit-messages-are-underestimated/
-    - label: "🇧🇷 Português"
-      url: /posts/2021/04/mensagens-de-commit-sao-subestimadas/
+  - label: "\U0001F1FA\U0001F1F8 English"
+    url: "/posts/2021/04/commit-messages-are-underestimated/"
+  - label: "\U0001F1E7\U0001F1F7 Português"
+    url: "/posts/2021/04/mensagens-de-commit-sao-subestimadas/"
 date: 2021-04-30
-permalink: /posts/:year/:month/:slug/
+permalink: "/posts/:year/:month/:slug/"
 tags:
-  - git
-  - github
-  - good-practices
+- git
+- github
+- good-practices
 categories:
-  - posts
-  - pt-br
----
+- posts
+- pt-br
+- tutorials
 
+---
 Todo desenvolvedor que já passou o mínimo de tempo navegando o histórico de um repositório sabe: **mensagens de commits são importantes**.
 
 Mas se isso é uma verdade bem estabelecida, por que quem já tem um certo nível de experiência com versionamento de código acaba negligenciando as mensagens de commit?
