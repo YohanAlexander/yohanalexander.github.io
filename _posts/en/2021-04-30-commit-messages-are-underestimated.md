@@ -1,28 +1,31 @@
 ---
-title: "Commit messages are underestimated (and shouldn't be)"
-tagline: "Why commit messages are important and how to become an craftsman on writing them."
-excerpt: "Why commit messages are important and how to become an craftsman on writing them."
+title: Commit messages are underestimated (and shouldn't be)
+tagline: Why commit messages are important and how to become an craftsman on writing
+  them.
+excerpt: Why commit messages are important and how to become an craftsman on writing
+  them.
 header:
   teaser: https://chris.beams.io/content/images/size/w2000/2021/01/git_commit_2x.png
   overlay_image: https://chris.beams.io/content/images/size/w2000/2021/01/git_commit_2x.png
-  overlay_filter: 0.6
-  caption: "Photo credit: [**xcd**](https://xkcd.com/1296/)"
+  overlay_filter: "0.6"
+  caption: 'Photo credit: [**xcd**](https://xkcd.com/1296/)'
   actions:
-    - label: "🇺🇸 English"
-      url: /posts/2021/04/commit-messages-are-underestimated/
-    - label: "🇧🇷 Português"
-      url: /posts/2021/04/mensagens-de-commit-sao-subestimadas/
+  - label: "\U0001F1FA\U0001F1F8 English"
+    url: "/posts/2021/04/commit-messages-are-underestimated/"
+  - label: "\U0001F1E7\U0001F1F7 Português"
+    url: "/posts/2021/04/mensagens-de-commit-sao-subestimadas/"
 date: 2021-04-30
-permalink: /posts/:year/:month/:slug/
+permalink: "/posts/:year/:month/:slug/"
 tags:
-  - git
-  - github
-  - good-practices
+- git
+- github
+- good-practices
 categories:
-  - posts
-  - en
----
+- posts
+- en
+- tutorials
 
+---
 Any developer who has spent the minimum amount of time browsing a repository's history knows: **commit messages are important**.
 
 But if this is a well-established truth, why does anyone who already has a certain level of experience with code versioning end up neglecting commit messages?
