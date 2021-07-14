@@ -1,0 +1,1055 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Commit messages are underestimated (and shouldn’t be) - Seamless Coder</title>
+<meta name="description" content="Why commit messages are important and how to become an craftsman on writing them.">
+
+
+  <meta name="author" content="Yohan Alexander">
+  
+  <meta property="article:author" content="Yohan Alexander">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Seamless Coder">
+<meta property="og:title" content="Commit messages are underestimated (and shouldn’t be)">
+<meta property="og:url" content="https://yohanalexander.github.io/posts/2021/04/commit-messages-are-underestimated/">
+
+
+  <meta property="og:description" content="Why commit messages are important and how to become an craftsman on writing them.">
+
+
+
+  <meta property="og:image" content="https://chris.beams.io/content/images/size/w2000/2021/01/git_commit_2x.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2021-04-30T00:00:00-03:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://yohanalexander.github.io/posts/2021/04/commit-messages-are-underestimated/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Yohan Alexander",
+      "url": "https://yohanalexander.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Seamless Coder Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="Yohan Alexander">
+<meta name="application-name" content="Yohan Alexander">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/favicons/favicon.ico" alt="Seamless Coder"></a>
+        
+        <a class="site-title" href="/">
+          Seamless Coder
+          <span class="site-subtitle"></span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/"></a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/portfolio/">Portfolio</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Blog</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://chris.beams.io/content/images/size/w2000/2021/01/git_commit_2x.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Commit messages are underestimated (and shouldn’t be)
+
+        
+      </h1>
+      
+        <p class="page__lead">Why commit messages are important and how to become an craftsman on writing them.
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-04-30T00:00:00-03:00">April 30, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+      
+        <p>
+        
+          <a href="/posts/2021/04/commit-messages-are-underestimated/" class="btn btn--light-outline btn--large">🇺🇸 English</a>
+        
+          <a href="/posts/2021/04/mensagens-de-commit-sao-subestimadas/" class="btn btn--light-outline btn--large">🇧🇷 Português</a>
+        
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://xkcd.com/1296/"><strong>xcd</strong></a>
+</span>
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://yohanalexander.github.io/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#posts" itemprop="item"><span itemprop="name">Posts</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#2021" itemprop="item"><span itemprop="name">2021</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#04" itemprop="item"><span itemprop="name">04</span></a>
+          <meta itemprop="position" content="4" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Commit messages are underestimated (and shouldn't be)</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/profile.png" alt="Yohan Alexander" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Yohan Alexander</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Software Engineer</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Brazil</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:yohanfranca@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://yohanalexander.github.io/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/yohanalexander/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/yohanalexander/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.instagram.com/yohanalexander/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Commit messages are underestimated (and shouldn’t be)">
+    <meta itemprop="description" content="Why commit messages are important and how to become an craftsman on writing them.">
+    <meta itemprop="datePublished" content="2021-04-30T00:00:00-03:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>Any developer who has spent the minimum amount of time browsing a repository’s history knows: <strong>commit messages are important</strong>.</p>
+
+<p>But if this is a well-established truth, why does anyone who already has a certain level of experience with code versioning end up neglecting commit messages?</p>
+
+<p><a href="https://workchronicles.com/commit-messages/"><img src="https://i0.wp.com/workchronicles.com/wp-content/uploads/2020/08/Small-Changes.png" alt="Work Chronicles" /></a></p>
+
+<p>As with any good programming or code versioning practice, commit messages require awareness. And regardless of the seniority of the developer, there are factors that can hinder the writing of a good message.</p>
+
+<ul>
+  <li><strong>Hurry</strong> <del>the enemy of perfection</del></li>
+</ul>
+
+<blockquote>
+  <p>It has to be deployed to production today…</p>
+</blockquote>
+
+<ul>
+  <li><strong>Laziness</strong></li>
+</ul>
+
+<p>You may be deluded by ideas like “these are just trivial changes”, “but nobody will read this later”, “everyone knows what I’m doing”.</p>
+
+<p>The messages must adequately communicate the <code class="language-plaintext highlighter-rouge">WHY</code> a change has been made. Understanding that the history must remain with the context of each change that occurred, makes collaboration and development more efficient.</p>
+
+<ul>
+  <li><strong>Lack of atomicity</strong></li>
+</ul>
+
+<p>Do you know when you get so messed up when writing a message because nothing describes the full context of the change?</p>
+
+<p>Commits that encompass many changes are bad versioning practice, and the confusion in creating a message already indicates this. The logic of the changes must be divided into <a href="https://www.freshconsulting.com/atomic-commits/">atoms</a>, very simple units that implement a single functionality or correct a specific error. And commits are an instance of these changes, a simplified representation of what the complete logic represents.</p>
+
+<p>In future posts I will talk about how to use <a href="/tags/#git">GIT</a> tool efficiently and to your advantage, exemplifying when, where and how to commit.</p>
+
+<ul>
+  <li><strong>Imprudence</strong></li>
+</ul>
+
+<p>You already know that it is important, you have the expertise of the tool, and yet you decide to do it wrong. <del>shame on you</del></p>
+
+<h1 id="why-write-an-excellent-commit-message">Why write an excellent commit message?</h1>
+
+<p>But if you’re still not convinced why you should write such an excellent commit message, let’s recreate a common scenario in the developers careers.</p>
+
+<p>You receive a medium priority demand from your PO with the “correct error in the user registration” task. Determined to solve the problem efficiently, you browse the repository to find the bug in the scope of the registration. To your surprise, the methods have no documentation, no tests, and you understand absolutely nothing about the diff of the modified files. The <code class="language-plaintext highlighter-rouge">git blame</code> points out that the last commit was made 1 month ago at 01:37 am on a Friday with the message “small changes”. After taking a deep breath for having your inner peace briefly shaken, you check the <code class="language-plaintext highlighter-rouge">git log</code> to understand the previous commits, and are faced with quite <em>explicative</em> messages such as “fixing a bug”, “adding method”, “making changes to the method”, “improving fixes”, and etc.</p>
+
+<blockquote>
+  <p>A well thought commit message is the best way to communicate the context of a change, whether to other developers, or even to yourself in the future.</p>
+</blockquote>
+
+<h1 id="but-how-do-you-become-an-craftsman-of-commit-messages">But how do you become an craftsman of commit messages?</h1>
+
+<p>First of all, it is necessary to understand that excellent commit messages do not happen by chance. You will never come across an impeccable message history, where employees have not taken the necessary care with each of the commits. Excellence is the result of good practices applied daily.</p>
+
+<p>And to guide our practices, there are conventions and standards (each team must agree on what best suits their reality).</p>
+
+<h2 id="conventional-commits">Conventional Commits</h2>
+
+<p><a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a> -or semantic commits- is a commit message convention, to help maintain an explicit and well-structured commit history. By following this type of convention, we can automate the creation of <a href="https://keepachangelog.com/en/1.0.0/">CHANGELOGs</a>, facilitate the entry of new developers to the project, in addition to being able to understand where the hours of the project (in code refactoring, feature creation, or bug fixes).</p>
+
+<p>For those who don’t know it yet, this is the standard form for a semantic commit:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[type](optional scope): [subject]
+
+[optional body]
+
+[optional footer]
+</code></pre></div></div>
+
+<p>A practical example:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>fix(containers/profile): adjust argument of  getThumbnailImage function
+
+getThumbnailImage used to receive argument of type XPTO.
+Now receives the correct argument of type FOO.
+
+
+Solves issue #132
+</code></pre></div></div>
+
+<h3 id="types-of-commits">Types of commits</h3>
+
+<p>The type of a commit is the initial description of what the commit is doing and there is a well-defined list:</p>
+
+<ul>
+  <li><strong>test</strong>: indicates any type of code creation or changing test codes. Example: Creation of unit tests.</li>
+  <li><strong>feat</strong>: indicates the development of a new feature to the project. Example: Adding a service, functionality, endpoint, etc.</li>
+  <li><strong>refactor</strong>: used when there is refactoring of code that does not have any impact on the logic or business rules of the system. Example: Code changes after a code review.</li>
+  <li><strong>style</strong>: used when there are changes in formatting and style of the code that do not alter the system in any way. Example: Change the style-guide, fix indentations, remove whitespace, remove comments, etc.</li>
+  <li><strong>fix</strong>: used when correcting errors that are generating bugs in the system. Example: Apply treatment to a function that is not behaving as expected and returning an error.</li>
+  <li><strong>chore</strong>: indicates design changes that do not affect the system or test files. Example: Changing environment variables in .env files, adding more file extensions to .gitignore.</li>
+  <li><strong>docs</strong>: used when there are changes to the project documentation. Example: adding information in the API documentation, changing the README, etc.</li>
+  <li><strong>build</strong>: used to indicate changes that affect the project’s build process or external dependencies. Example: adding or removing dependencies from project requirements, etc.</li>
+  <li><strong>perf</strong>: indicates a change that improved the performance of the system. Example: changing ForEach for while, improving the query to the database, etc.</li>
+  <li><strong>ci</strong>: used for changes to CI configuration files. Example: Circle, Travis, BrowserStack, etc.</li>
+  <li><strong>revert</strong>: indicates the reversal of a previous commit.</li>
+</ul>
+
+<h3 id="commit-scopes">Commit scopes</h3>
+
+<p>The scope of the commit is an optional part, short and easy to understand. This is where we will indicate which part of the code has been modified, such as a microservice layer for example. In general, the use of the scope is very generic, for example, being able to associate the numbering of tasks if your team follows some agile method.</p>
+
+<h3 id="commit-body">Commit body</h3>
+
+<p>The body, will contain more accurate descriptions of what is contained in that commit, showing the reasons or consequences generated by this code.</p>
+
+<h3 id="commit-footers">Commit footers</h3>
+
+<p>The footer is restricted to changes in status, such as resolutions of the status of issues or association of a task. Example: “resolves issue #312”.</p>
+
+<h3 id="commit-subject">Commit subject</h3>
+
+<p>The subject -or message- is mandatory, and therefore is the most important part of the standard, and must be sufficiently clear as to why the changes in the commit. Remember that the <code class="language-plaintext highlighter-rouge">diff</code> of the changes tells you what has changed, but only the message efficiently represents the <code class="language-plaintext highlighter-rouge">WHY</code> of the changes.</p>
+
+<p>In Chris Beams’s <a href="https://chris.beams.io/posts/git-commit/">article</a> 7 rules are also defined for a good message:</p>
+
+<ol>
+  <li><a href="https://chris.beams.io/posts/git-commit/#separate">Separate subject from body with a blank line</a></li>
+  <li><a href="https://chris.beams.io/posts/git-commit/#limit-50">Limit the subject line to 50 characters</a></li>
+  <li><a href="https://chris.beams.io/posts/git-commit/#capitalize">Capitalize the subject line</a></li>
+  <li><a href="https://chris.beams.io/posts/git-commit/#end">Do not end the subject line with a period</a></li>
+  <li><a href="https://chris.beams.io/posts/git-commit/#imperative">Use the imperative mood in the subject line</a></li>
+  <li><a href="https://chris.beams.io/posts/git-commit/#wrap-72">Wrap the body at 72 characters</a></li>
+  <li><a href="https://chris.beams.io/posts/git-commit/#why-not-how">Use the body to explain what and why vs. how</a></li>
+</ol>
+
+<p>I am not going to delve into each rule, as most are already self-explanatory. But for some, rule 5, about writing the message in the imperative, generates a slight initial estrangement, because the change implemented was a “past action”, but when writing messages using the imperative mode we are saying <strong>what the commit does if applied</strong>.</p>
+
+<p>If you were to make a cherry-pick (copy a commit from one branch to another) or a revert for example, that commit will “perform a task” not “performed a task”.</p>
+
+<p>The golden rule is that the message must complete the sentence:</p>
+
+<blockquote>
+  <p>If applied, this commit will <code class="language-plaintext highlighter-rouge">commit message here</code></p>
+</blockquote>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit <span class="nt">-m</span> <span class="s2">"&lt;commit message here&gt;"</span>
+</code></pre></div></div>
+
+<p>Finally, see the real example of a commit made to the core repository of <a href="https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6">Bitcoin</a>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>commit eb0b56b19017ab5c16c745e6da39c53126924ed6
+Author: Pieter Wuille &lt;pieter.wuille@gmail.com&gt;
+Date:   Fri Aug 1 22:57:55 2014 +0200
+
+   Simplify serialize.h's exception handling
+
+   Remove the 'state' and 'exceptmask' from serialize.h's stream
+   implementations, as well as related methods.
+
+   As exceptmask always included 'failbit', and setstate was always
+   called with bits = failbit, all it did was immediately raise an
+   exception. Get rid of those variables, and replace the setstate
+   with direct exception throwing (which also removes some dead
+   code).
+
+   As a result, good() is never reached after a failure (there are
+   only 2 calls, one of which is in tests), and can just be replaced
+   by !eof().
+
+   fail(), clear(n) and exceptions() are just never called. Delete
+   them.
+</code></pre></div></div>
+
+<h1 id="further-reading">Further reading</h1>
+
+<ul>
+  <li><a href="https://chris.beams.io/posts/git-commit/">How to Write a Git Commit Message</a></li>
+  <li><a href="https://who-t.blogspot.com/2009/12/on-commit-messages.html">On Commit Messages</a></li>
+  <li><a href="https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">A Note About Git Commit Messages</a></li>
+  <li><a href="https://www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines">Commit Guidelines</a></li>
+  <li><a href="https://www.freshconsulting.com/atomic-commits/">Keep Your Commits “Atomic”</a></li>
+  <li><a href="https://www.conventionalcommits.org/en/v1.0.0/">Conventional Commits</a></li>
+  <li><a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a></li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#git" class="page__taxonomy-item" rel="tag">git</a><span class="sep">, </span>
+    
+      <a href="/tags/#github" class="page__taxonomy-item" rel="tag">github</a><span class="sep">, </span>
+    
+      <a href="/tags/#good-practices" class="page__taxonomy-item" rel="tag">good-practices</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#en" class="page__taxonomy-item" rel="tag">en</a><span class="sep">, </span>
+    
+      <a href="/categories/#posts" class="page__taxonomy-item" rel="tag">posts</a><span class="sep">, </span>
+    
+      <a href="/categories/#tutorials" class="page__taxonomy-item" rel="tag">tutorials</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-04-30T00:00:00-03:00">April 30, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Commit+messages+are+underestimated+%28and+shouldn%27t+be%29%20https%3A%2F%2Fyohanalexander.github.io%2Fposts%2F2021%2F04%2Fcommit-messages-are-underestimated%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyohanalexander.github.io%2Fposts%2F2021%2F04%2Fcommit-messages-are-underestimated%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fyohanalexander.github.io%2Fposts%2F2021%2F04%2Fcommit-messages-are-underestimated%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/posts/2021/01/bem-vindo-ao-meu-blog/" class="pagination--pager" title="Bem vindo ao meu blog!
+">Previous</a>
+    
+    
+      <a href="/posts/2021/04/mensagens-de-commit-sao-subestimadas/" class="pagination--pager" title="Mensagens de commit são subestimadas (e não deveriam)
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Leave a comment</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/head2x.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2021/07/a-verdade-github-copilot/" rel="permalink">A verdade distópica sobre o Github Copilot (Programadores Não Precisam Se Candidatar)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-02T00:00:00-03:00">July 2, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Porquê os programadores deveriam ficar preocupados com a acensão das IAs geradoras de código?
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/head2x.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2021/07/the-truth-github-copilot/" rel="permalink">The Dystopian Truth About Github Copilot (Programmers Need Not Apply)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-02T00:00:00-03:00">July 2, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Why should programmers be concerned about the rise of code-generating AIs?
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://chris.beams.io/content/images/size/w2000/2021/01/git_commit_2x.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2021/04/mensagens-de-commit-sao-subestimadas/" rel="permalink">Mensagens de commit são subestimadas (e não deveriam)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-04-30T00:00:00-03:00">April 30, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Porquê mensagens de commit são importantes e como se tornar um artesão ao escrevê-lás.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://miro.medium.com/max/700/1*OohqW5DGh9CQS4hLY5FXzA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2021/01/bem-vindo-ao-meu-blog/" rel="permalink">Bem vindo ao meu blog!
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-01-18T00:00:00-03:00">January 18, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Um breve post para introduzir o meu blog.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<!-- end custom footer snippets -->
+
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://beacons.page/yohanalexander/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Beacons</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Yohan Alexander. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <script>
+  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+  ga('create','UA-156934758-1','auto');
+  ga('set', 'anonymizeIp', false);
+  ga('send','pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://yohanalexander.github.io/posts/2021/04/commit-messages-are-underestimated/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/posts/2021/04/commit-messages-are-underestimated"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://yohanalexander-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

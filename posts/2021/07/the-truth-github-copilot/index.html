@@ -1,0 +1,966 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>The Dystopian Truth About Github Copilot (Programmers Need Not Apply) - Seamless Coder</title>
+<meta name="description" content="Why should programmers be concerned about the rise of code-generating AIs?">
+
+
+  <meta name="author" content="Yohan Alexander">
+  
+  <meta property="article:author" content="Yohan Alexander">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Seamless Coder">
+<meta property="og:title" content="The Dystopian Truth About Github Copilot (Programmers Need Not Apply)">
+<meta property="og:url" content="https://yohanalexander.github.io/posts/2021/07/the-truth-github-copilot/">
+
+
+  <meta property="og:description" content="Why should programmers be concerned about the rise of code-generating AIs?">
+
+
+
+  <meta property="og:image" content="https://yohanalexander.github.io/assets/head2x.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2021-07-02T00:00:00-03:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://yohanalexander.github.io/posts/2021/07/the-truth-github-copilot/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Yohan Alexander",
+      "url": "https://yohanalexander.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Seamless Coder Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="Yohan Alexander">
+<meta name="application-name" content="Yohan Alexander">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/favicons/favicon.ico" alt="Seamless Coder"></a>
+        
+        <a class="site-title" href="/">
+          Seamless Coder
+          <span class="site-subtitle"></span>
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item">
+              <a href="/"></a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/portfolio/">Portfolio</a>
+            </li>
+<li class="masthead__menu-item">
+              <a href="/posts/">Blog</a>
+            </li>
+</ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay" style=" background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/head2x.png');">
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          The Dystopian Truth About Github Copilot (Programmers Need Not Apply)
+
+        
+      </h1>
+      
+        <p class="page__lead">Why should programmers be concerned about the rise of code-generating AIs?
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-02T00:00:00-03:00">July 2, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+      
+        <p>
+        
+          <a href="/posts/2021/07/the-truth-github-copilot/" class="btn btn--light-outline btn--large">🇺🇸 English</a>
+        
+          <a href="/posts/2021/07/a-verdade-github-copilot/" class="btn btn--light-outline btn--large">🇧🇷 Português</a>
+        
+      
+    </p>
+</div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://copilot.github.com/head2x.png"><strong>GithubCopilot</strong></a>
+</span>
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://yohanalexander.github.io/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1">
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#posts" itemprop="item"><span itemprop="name">Posts</span></a>
+          <meta itemprop="position" content="2">
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#2021" itemprop="item"><span itemprop="name">2021</span></a>
+          <meta itemprop="position" content="3">
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/categories/#07" itemprop="item"><span itemprop="name">07</span></a>
+          <meta itemprop="position" content="4">
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">The Dystopian Truth About Github Copilot (Programmers Need Not Apply)</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/profile.png" alt="Yohan Alexander" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Yohan Alexander</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Software Engineer</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Brazil</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:yohanfranca@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://yohanalexander.github.io/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/yohanalexander/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/yohanalexander/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.instagram.com/yohanalexander/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="The Dystopian Truth About Github Copilot (Programmers Need Not Apply)">
+    <meta itemprop="description" content="Why should programmers be concerned about the rise of code-generating AIs?">
+    <meta itemprop="datePublished" content="2021-07-02T00:00:00-03:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>This week the arrival of <a href="https://copilot.github.com/" title="Github Copilot">Github Copilot</a> has caught the eyes of the software developer community by its rather impressive functioning <del>although still imperfect</del>, <strong>but was the community concerned as it should?</strong></p>
+
+<blockquote class="twitter-tweet">
+<p lang="en" dir="ltr">Meet GitHub Copilot - your AI pair programmer. <a href="https://t.co/eWPueAXTFt">https://t.co/eWPueAXTFt</a> <a href="https://t.co/NPua5K2vFS">pic.twitter.com/NPua5K2vFS</a></p>— GitHub (@github) <a href="https://twitter.com/github/status/1409883156333879300?ref_src=twsrc%5Etfw">June 29, 2021</a>
+</blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><a href="https://openai.com/" title="OpenAI">OpenAI</a> and <a href="https://github.com/" title="GitHub">GitHub</a> have announced the <strong>technical preview</strong> of an AI that promises to be your new <strong>pair programmer</strong>. <code class="language-plaintext highlighter-rouge">Copilot</code> works as an extension to IDEs, so far compatible with VSCode, similar to IA-powered code completion tools like <a href="https://www.tabnine.com/" title="Tabnine">Tabnine</a>, however with fundamental differences.</p>
+
+<h1 id="how-does-copilot-work">How does Copilot work?</h1>
+
+<p>The tool is the result of an investment of <a href="https://news.microsoft.com/2019/07/22/openai-forms-exclusive-computing-partnership-with-microsoft-to-build-new-%20azure-ai-supercomputing-technologies/">$1 billion</a> from <a href="https://www.microsoft.com/" title="Microsoft">Microsoft</a> at OpenAI, a company specialized in the development and research of <code class="language-plaintext highlighter-rouge">Artificial General Intelligence</code>. “<code class="language-plaintext highlighter-rouge">Copilot</code> automatically fills in code snippets, suggests new lines, and can even write entire functions based on the description provided”, said Github CEO, Nat Friedman, in a <a href="https://github.%20blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/" title="blog post">blog post</a>.</p>
+
+<p><img src="https://copilot.github.com/diagram.png" alt="Github Copilot"></p>
+
+<p>At its core, <code class="language-plaintext highlighter-rouge">Copilot</code> uses a new code generation algorithm from OpenAI called <code class="language-plaintext highlighter-rouge">Codex</code>. OpenAI CEO, Greg Brockman, describes it as a descendant of GPT-3, but with a focus on code generation. The <code class="language-plaintext highlighter-rouge">Codex</code> algorithm was trained on terabytes of public code extracted from GitHub and <a href="https://stackoverflow.com/" title="StackOverflow">StackOverflow</a>. <strong>This gives the tool the ability to write context-based code with unprecedented precision.</strong></p>
+
+<blockquote>
+  <p>You can have fun with some AI suggestions for philosophical codes on <a href="https://minimaxir.com/2021/06/gpt-j-6b/">Max Woolf’s blog post</a>.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">should_terminate</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+    <span class="s">"""Check whether a Person should be terminated"""</span>
+
+    <span class="k">if</span> <span class="n">Person</span><span class="p">.</span><span class="nb">id</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="c1">#terminate
+</span>        <span class="k">return</span> <span class="bp">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1">#continue
+</span>        <span class="k">return</span> <span class="bp">False</span>
+</code></pre></div></div>
+
+<h1 id="the-inevitability-of-automation">The Inevitability of Automation</h1>
+
+<p>But are the intentions of Microsoft (a multi-billion dollar company) purely benevolent and pro-community? As much as a company is community-friendly, <strong>the principle of capitalism is profit</strong>, and the profit made by eliminating the highly skilled and expensive programmers outweigh any publicized friendly benefits.</p>
+
+<p>At first you can reject the idea that your job is going to be taken over by a code-generating AI, after all a programmer had to create the AI code in the first place, right?</p>
+
+<p>Wrong. We tend to stick to a comfortable lie to have a false sense of security, but in reality <strong>cognitive automation has been going on for a long time</strong>, as explained in this excellent video from <a href="https://www.youtube.com/user/cgpgrey">CGP Grey</a> channel.</p>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/7Pq-S557XQU" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>No matter how specialized a workforce, it ends up being replaced, <strong>automation is inevitable</strong>. After all, no one needs a top-of-the-line solution 100% of the time, often a mid-range solution is enough. Several similar examples have already taken place, so in an era where code can be generated by AIs, <strong>entry into the workforce will become increasingly difficult.</strong></p>
+
+<h1 id="the-dystopian-truth">The dystopian truth</h1>
+
+<p>The parallel between the inevitability of automation and what the AI developed for Github Copilot represents is very well drawn in this video from the <a href="https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA">Fireship</a> channel. And after analyzing the past, it becomes much harder to believe in an optimistic future.</p>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/4duqI8WyfqE" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>For now, the tool will be used to help programmers perform their role better, but in the not-too-distant future AI will have learned and surpassed its own creators. Whether we are indeed “digging our own pits” toward a dystopian future for programming jobs, only time will tell.</p>
+
+<p>But on the bright side we will have more free time <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"></p>
+
+<h1 id="further-reading">Further reading</h1>
+
+<ul>
+  <li><a href="https://copilot.github.com/" title="https://copilot.github.com/">https://copilot.github.com/</a></li>
+  <li><a href="https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/" title="https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/">https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/</a></li>
+  <li><a href="https://minimaxir.com/2021/06/gpt-j-6b/" title="https://minimaxir.com/2021/06/gpt-j-6b/">https://minimaxir.com/2021/06/gpt-j-6b/</a></li>
+  <li><a href="https://thenewstack.io/github-copilot-a-powerful-controversial-autocomplete-for-developers/" title="https://thenewstack.io/github-copilot-a-powerful-controversial-autocomplete-for-developers/">https://thenewstack.io/github-copilot-a-powerful-controversial-autocomplete-for-developers/</a></li>
+  <li><a href="https://towardsdatascience.com/should-we-be-worried-now-that-github-copilot-is-out-12f59551cd95" title="https://towardsdatascience.com/should-we-be-worried-now-that-github-copilot-is-out-12f59551cd95">https://towardsdatascience.com/should-we-be-worried-now-that-github-copilot-is-out-12f59551cd95</a></li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#ai" class="page__taxonomy-item" rel="tag">ai</a><span class="sep">, </span>
+    
+      <a href="/tags/#automation" class="page__taxonomy-item" rel="tag">automation</a><span class="sep">, </span>
+    
+      <a href="/tags/#editor-tools" class="page__taxonomy-item" rel="tag">editor-tools</a><span class="sep">, </span>
+    
+      <a href="/tags/#github" class="page__taxonomy-item" rel="tag">github</a><span class="sep">, </span>
+    
+      <a href="/tags/#githubcopilot" class="page__taxonomy-item" rel="tag">GithubCopilot</a><span class="sep">, </span>
+    
+      <a href="/tags/#gpt" class="page__taxonomy-item" rel="tag">gpt</a><span class="sep">, </span>
+    
+      <a href="/tags/#text-generation" class="page__taxonomy-item" rel="tag">text-generation</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#en" class="page__taxonomy-item" rel="tag">en</a><span class="sep">, </span>
+    
+      <a href="/categories/#posts" class="page__taxonomy-item" rel="tag">posts</a><span class="sep">, </span>
+    
+      <a href="/categories/#tech" class="page__taxonomy-item" rel="tag">tech</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2021-07-02T00:00:00-03:00">July 2, 2021</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=The+Dystopian+Truth+About+Github+Copilot+%28Programmers+Need+Not+Apply%29%20https%3A%2F%2Fyohanalexander.github.io%2Fposts%2F2021%2F07%2Fthe-truth-github-copilot%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyohanalexander.github.io%2Fposts%2F2021%2F07%2Fthe-truth-github-copilot%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fyohanalexander.github.io%2Fposts%2F2021%2F07%2Fthe-truth-github-copilot%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/posts/2021/04/mensagens-de-commit-sao-subestimadas/" class="pagination--pager" title="Mensagens de commit são subestimadas (e não deveriam)
+">Previous</a>
+    
+    
+      <a href="/posts/2021/07/a-verdade-github-copilot/" class="pagination--pager" title="A verdade distópica sobre o Github Copilot (Programadores Não Precisam Se Candidatar)
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Leave a comment</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/head2x.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2021/07/a-verdade-github-copilot/" rel="permalink">A verdade distópica sobre o Github Copilot (Programadores Não Precisam Se Candidatar)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-07-02T00:00:00-03:00">July 2, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Porquê os programadores deveriam ficar preocupados com a acensão das IAs geradoras de código?
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://chris.beams.io/content/images/size/w2000/2021/01/git_commit_2x.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2021/04/mensagens-de-commit-sao-subestimadas/" rel="permalink">Mensagens de commit são subestimadas (e não deveriam)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-04-30T00:00:00-03:00">April 30, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Porquê mensagens de commit são importantes e como se tornar um artesão ao escrevê-lás.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://chris.beams.io/content/images/size/w2000/2021/01/git_commit_2x.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2021/04/commit-messages-are-underestimated/" rel="permalink">Commit messages are underestimated (and shouldn’t be)
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-04-30T00:00:00-03:00">April 30, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Why commit messages are important and how to become an craftsman on writing them.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="https://miro.medium.com/max/700/1*OohqW5DGh9CQS4hLY5FXzA.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/2021/01/bem-vindo-ao-meu-blog/" rel="permalink">Bem vindo ao meu blog!
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-fw fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-01-18T00:00:00-03:00">January 18, 2021</time>
+      </span>
+    
+
+    <span class="page__meta-sep"></span>
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-fw fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Um breve post para introduzir o meu blog.
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+<form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term...">
+  </form>
+  <div id="results" class="results"></div>
+</div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<!-- end custom footer snippets -->
+
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://beacons.page/yohanalexander/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Beacons</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2021 Yohan Alexander. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <script>
+  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+  ga('create','UA-156934758-1','auto');
+  ga('set', 'anonymizeIp', false);
+  ga('send','pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://yohanalexander.github.io/posts/2021/07/the-truth-github-copilot/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/posts/2021/07/the-truth-github-copilot"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://yohanalexander-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
