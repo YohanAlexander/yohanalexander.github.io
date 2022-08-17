@@ -1,0 +1,694 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.23.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Z2n Periodogram - Seamless Coder</title>
+<meta name="description" content="A program for interactive peridogram analysis.">
+
+
+  <meta name="author" content="Yohan Alexander">
+  
+  <meta property="article:author" content="Yohan Alexander">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Seamless Coder">
+<meta property="og:title" content="Z2n Periodogram">
+<meta property="og:url" content="https://yohanalexander.github.io/portfolio/z2n-periodogram/">
+
+
+  <meta property="og:description" content="A program for interactive peridogram analysis.">
+
+
+
+  <meta property="og:image" content="https://kinsta.com/pt/wp-content/uploads/sites/3/2019/06/que-e-o-github-1024x512.png">
+
+
+
+
+
+  <meta property="article:published_time" content="2022-08-17T10:32:31-03:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://yohanalexander.github.io/portfolio/z2n-periodogram/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Yohan Alexander",
+      "url": "https://yohanalexander.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Seamless Coder Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/images/favicons/site.webmanifest">
+<link rel="mask-icon" href="/assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/assets/images/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="Yohan Alexander">
+<meta name="application-name" content="Yohan Alexander">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/images/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/favicons/favicon.ico" alt="Seamless Coder"></a>
+        
+        <a class="site-title" href="/">
+          Seamless Coder
+          <span class="site-subtitle"></span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/"></a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/portfolio/">Portfolio</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Blog</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('https://kinsta.com/pt/wp-content/uploads/sites/3/2019/06/que-e-o-github-1024x512.png');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Z2n Periodogram
+
+        
+      </h1>
+      
+        <p class="page__lead">A program for interactive peridogram analysis.
+</p>
+      
+      
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+      
+      
+        <p>
+        
+          <a href="https://github.com/yohanalexander/z2n-periodogram/" class="btn btn--light-outline btn--large">Github</a>
+        
+          <a href="https://pypi.org/project/z2n-periodogram/" class="btn btn--light-outline btn--large">PyPI</a>
+        
+          <a href="https://z2n-periodogram.readthedocs.io/" class="btn btn--light-outline btn--large">Documentation</a>
+        
+      
+    </div>
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://kinsta.com/pt/base-de-conhecimento/que-github/"><strong>Kinsta</strong></a>
+</span>
+  
+</div>
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://yohanalexander.github.io/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/portfolio" itemprop="item"><span itemprop="name">Portfolio</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Z2n Periodogram</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+        <img src="/assets/images/profile.png" alt="Yohan Alexander" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Yohan Alexander</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Software Engineer</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Brazil</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:yohanfranca@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://yohanalexander.github.io/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/yohanalexander/" rel="nofollow noopener noreferrer"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/yohanalexander/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://www.instagram.com/yohanalexander/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Z2n Periodogram">
+    <meta itemprop="description" content="A program for interactive peridogram analysis.">
+    <meta itemprop="datePublished" content="2022-08-17T10:32:31-03:00">
+    
+
+    <div class="page__inner-wrap">
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <blockquote class="notice--info">
+  <p><i class="fas fa-download"></i> Download the article on <a href="/assets/files/z2n.pdf" class="btn btn--danger btn--large">PDF</a></p>
+</blockquote>
+
+<p><a href="https://pypi.org/project/z2n-periodogram/"><img src="https://img.shields.io/pypi/v/z2n-periodogram" alt="PyPI" /></a>
+<a href="https://github.com/yohanalexander/z2n-periodogram/issues"><img src="https://img.shields.io/github/issues/yohanalexander/z2n-periodogram" alt="GitHub issues" /></a>
+<a href="https://github.com/YohanAlexander/z2n-periodogram/blob/master/LICENSE"><img src="https://img.shields.io/github/license/yohanalexander/z2n-periodogram" alt="GitHub" /></a>
+<a href="https://z2n-periodogram.readthedocs.io/en/latest/?badge=latest"><img src="https://readthedocs.org/projects/z2n-periodogram/badge/?version=latest" alt="Documentation Status" /></a></p>
+
+<p><img src="https://user-images.githubusercontent.com/39287022/84617670-23675480-aea6-11ea-90ac-93a32c01bb92.png" alt="Logo-z2n" /></p>
+
+<h2 id="about-the-project">About The Project</h2>
+
+<p>The Z2n Software was developed by Yohan Alexander as a research project, funded by the CNPq Institution, and it is a Open Source initiative. The program allows the user to calculate periodograms using the Z2n statistics a la Buccheri et al. 1983, which is defined as follows.</p>
+
+<p><img src="https://render.githubusercontent.com/render/math?math=%5CLarge%20%5Cphi_j%20%5B0%2C1%5D%20%3D%20frac(v_i%5CDelta%20t_%7Bij%7D%20%2B%20%5Cdot%20v_i%20%5Cfrac%7B%5CDelta%20t%5E2_%7Bij%7D%7D%7B2%7D%20%2B%20%5Cdot%20v_i%20%5Cfrac%7B%5CDelta%20t%5E3_%7Bij%7D%7D%7B6%7D)" alt="\Large \phi_j [0,1] = frac(v_i\Delta t_{ij} + \dot v_i \frac{\Delta t^2_{ij}}{2} + \dot v_i \frac{\Delta t^3_{ij}}{6})" /></p>
+
+<p><img src="https://render.githubusercontent.com/render/math?math=%5CLarge%20Z%5E2_n%20%3D%20%5Cfrac%7B2%7D%7BN%7D%20%5Ccdot%20%5Csum_%7Bk%3D1%7D%5E%7Bn%7D%20%5B(%5Csum_%7Bj%3D1%7D%5E%7BN%7D%20cos(k%5Cphi_j))%20%5E%202%20%2B%20(%5Csum_%7Bj%3D1%7D%5E%7BN%7D%20sin(k%5Cphi_j))%20%5E%202%5D" alt="\Large Z^2_n = \frac{2}{N} \cdot \sum_{k=1}^{n} [(\sum_{j=1}^{N} cos(k\phi_j)) ^ 2 + (\sum_{j=1}^{N} sin(k\phi_j)) ^ 2]" /></p>
+
+<p>The standard Z2n statistics calculates the phase of each photon and the sinusoidal functions above for each photon. Be advised that this is very computationally expensive if the number of photons is high, since the algorithm grows at a exponential rate <img src="https://render.githubusercontent.com/render/math?math=%5Clarge%20O(n%5E2)" alt="\large O(n^2)" />.</p>
+
+<h3 id="built-with">Built With</h3>
+<p>The Z2n Software was built using the <code class="language-plaintext highlighter-rouge">Python</code> open source language.</p>
+<ul>
+  <li><a href="https://python.org">Python</a></li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<p>The version of the <code class="language-plaintext highlighter-rouge">Python</code> interpreter used during the development was the<code class="language-plaintext highlighter-rouge">3.7</code>, which can be managed in virtual environments such as <code class="language-plaintext highlighter-rouge">Anaconda</code>. Therefore, try to use the same or above versions for the best compatibility.</p>
+
+<ul>
+  <li>Python&gt;=3.7</li>
+  <li>PIP</li>
+</ul>
+
+<h3 id="installation">Installation</h3>
+
+<p>The software is currently hosted at the Python central repository <code class="language-plaintext highlighter-rouge">PyPI</code>,  to install the software properly use the terminal command:</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install </span>z2n-periodogram
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<p>To start the software just type <code class="language-plaintext highlighter-rouge">z2n</code> on the terminal (check if you’re under the virtual environment that it is installed).</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>z2n
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">CLI</code> of the software is very interactive and it works by triggering the commands available, for more information on the usage type <code class="language-plaintext highlighter-rouge">help</code>.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        Z2n Software, a program <span class="k">for </span>interactive periodograms analysis.
+        Copyright <span class="o">(</span>C<span class="o">)</span> 2020, and MIT License, by Yohan Alexander <span class="o">[</span>UFS].
+        Type <span class="s2">"help"</span> <span class="k">for </span>more information or <span class="s2">"docs"</span> <span class="k">for </span>documentation.
+
+<span class="o">(</span>z2n<span class="o">)</span> <span class="o">&gt;&gt;&gt;</span> <span class="nb">help
+
+</span>Documented commands <span class="o">(</span><span class="nb">type help</span> &lt;topic&gt;<span class="o">)</span>:
+<span class="o">========================================</span>
+docs  gauss  plot  run  save
+
+Undocumented commands:
+<span class="o">======================</span>
+<span class="nb">exit  help  </span>quit
+
+<span class="o">(</span>z2n<span class="o">)</span> <span class="o">&gt;&gt;&gt;</span>
+</code></pre></div></div>
+
+<p><em>For more examples, please refer to the <a href="https://z2n-periodogram.readthedocs.io/">Documentation</a></em></p>
+
+<h2 id="roadmap">Roadmap</h2>
+
+<p>See the <a href="https://github.com/yohanalexander/z2n-periodogram/issues">open issues</a> for a list of proposed features (and known issues).</p>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are <strong>greatly appreciated</strong>.</p>
+
+<ol>
+  <li>Fork the Project</li>
+  <li>Create your Feature Branch (<code class="language-plaintext highlighter-rouge">git checkout -b feature/AmazingFeature</code>)</li>
+  <li>Commit your Changes (<code class="language-plaintext highlighter-rouge">git commit -m 'Add some AmazingFeature'</code>)</li>
+  <li>Push to the Branch (<code class="language-plaintext highlighter-rouge">git push origin feature/AmazingFeature</code>)</li>
+  <li>Open a Pull Request</li>
+</ol>
+
+<h2 id="license">License</h2>
+
+<p>All content © 2020 Yohan Alexander. Distributed under the MIT License. See <a href="https://github.com/YohanAlexander/z2n-periodogram/blob/master/LICENSE">LICENSE</a> for more information.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2022-08-17T10:32:31-03:00">August 17, 2022</time></p>
+
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Z2n+Periodogram%20https%3A%2F%2Fyohanalexander.github.io%2Fportfolio%2Fz2n-periodogram%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyohanalexander.github.io%2Fportfolio%2Fz2n-periodogram%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fyohanalexander.github.io%2Fportfolio%2Fz2n-periodogram%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/portfolio/digital-banking/" class="pagination--pager" title="API Restful simulando um banco digital
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Leave a comment</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<!-- end custom footer snippets -->
+
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://beacons.page/yohanalexander/" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-link" aria-hidden="true"></i> Beacons</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Yohan Alexander. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+  <script>
+  window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+  ga('create','UA-156934758-1','auto');
+  ga('set', 'anonymizeIp', false);
+  ga('send','pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://yohanalexander.github.io/portfolio/z2n-periodogram/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/portfolio/z2n-periodogram"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://yohanalexander-github-io.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

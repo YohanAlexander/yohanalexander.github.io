@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://yohanalexander.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://yohanalexander.github.io/" rel="alternate" type="text/html" /><updated>2022-08-17T10:32:31-03:00</updated><id>https://yohanalexander.github.io/feed.xml</id><title type="html">Seamless Coder</title><subtitle>Site para o portfólio dos meus projetos</subtitle><author><name>Yohan Alexander</name></author><entry><title type="html">The Dystopian Truth About Github Copilot (Programmers Need Not Apply)</title><link href="https://yohanalexander.github.io/posts/2021/07/the-truth-github-copilot/" rel="alternate" type="text/html" title="The Dystopian Truth About Github Copilot (Programmers Need Not Apply)" /><published>2021-07-02T00:00:00-03:00</published><updated>2021-07-02T00:00:00-03:00</updated><id>https://yohanalexander.github.io/posts/2021/07/the-truth-github-copilot</id><content type="html" xml:base="https://yohanalexander.github.io/posts/2021/07/the-truth-github-copilot/">&lt;p&gt;This week the arrival of &lt;a href=&quot;https://copilot.github.com/&quot; title=&quot;Github Copilot&quot;&gt;Github Copilot&lt;/a&gt; has caught the eyes of the software developer community by its rather impressive functioning &lt;del&gt;although still imperfect&lt;/del&gt;, &lt;strong&gt;but was the community concerned as it should?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Meet GitHub Copilot - your AI pair programmer. &lt;a href=&quot;https://t.co/eWPueAXTFt&quot;&gt;https://t.co/eWPueAXTFt&lt;/a&gt; &lt;a href=&quot;https://t.co/NPua5K2vFS&quot;&gt;pic.twitter.com/NPua5K2vFS&lt;/a&gt;&lt;/p&gt;— GitHub (@github) &lt;a href=&quot;https://twitter.com/github/status/1409883156333879300?ref_src=twsrc%5Etfw&quot;&gt;June 29, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://openai.com/&quot; title=&quot;OpenAI&quot;&gt;OpenAI&lt;/a&gt; and &lt;a href=&quot;https://github.com/&quot; title=&quot;GitHub&quot;&gt;GitHub&lt;/a&gt; have announced the &lt;strong&gt;technical preview&lt;/strong&gt; of an AI that promises to be your new &lt;strong&gt;pair programmer&lt;/strong&gt;. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Copilot&lt;/code&gt; works as an extension to IDEs, so far compatible with VSCode, similar to IA-powered code completion tools like &lt;a href=&quot;https://www.tabnine.com/&quot; title=&quot;Tabnine&quot;&gt;Tabnine&lt;/a&gt;, however with fundamental differences.&lt;/p&gt;
+
+&lt;h1 id=&quot;how-does-copilot-work&quot;&gt;How does Copilot work?&lt;/h1&gt;
+
+&lt;p&gt;The tool is the result of an investment of &lt;a href=&quot;https://news.microsoft.com/2019/07/22/openai-forms-exclusive-computing-partnership-with-microsoft-to-build-new- azure-ai-supercomputing-technologies/&quot;&gt;$1 billion&lt;/a&gt; from &lt;a href=&quot;https://www.microsoft.com/&quot; title=&quot;Microsoft&quot;&gt;Microsoft&lt;/a&gt; at OpenAI, a company specialized in the development and research of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Artificial General Intelligence&lt;/code&gt;. “&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Copilot&lt;/code&gt; automatically fills in code snippets, suggests new lines, and can even write entire functions based on the description provided”, said Github CEO, Nat Friedman, in a &lt;a href=&quot;https://github. blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/&quot; title=&quot;blog post&quot;&gt;blog post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://copilot.github.com/diagram.png&quot; alt=&quot;Github Copilot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;At its core, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Copilot&lt;/code&gt; uses a new code generation algorithm from OpenAI called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Codex&lt;/code&gt;. OpenAI CEO, Greg Brockman, describes it as a descendant of GPT-3, but with a focus on code generation. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Codex&lt;/code&gt; algorithm was trained on terabytes of public code extracted from GitHub and &lt;a href=&quot;https://stackoverflow.com/&quot; title=&quot;StackOverflow&quot;&gt;StackOverflow&lt;/a&gt;. &lt;strong&gt;This gives the tool the ability to write context-based code with unprecedented precision.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You can have fun with some AI suggestions for philosophical codes on &lt;a href=&quot;https://minimaxir.com/2021/06/gpt-j-6b/&quot;&gt;Max Woolf’s blog post&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;should_terminate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;Check whether a Person should be terminated&quot;&quot;&quot;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;#terminate
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;#continue
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;the-inevitability-of-automation&quot;&gt;The Inevitability of Automation&lt;/h1&gt;
+
+&lt;p&gt;But are the intentions of Microsoft (a multi-billion dollar company) purely benevolent and pro-community? As much as a company is community-friendly, &lt;strong&gt;the principle of capitalism is profit&lt;/strong&gt;, and the profit made by eliminating the highly skilled and expensive programmers outweigh any publicized friendly benefits.&lt;/p&gt;
+
+&lt;p&gt;At first you can reject the idea that your job is going to be taken over by a code-generating AI, after all a programmer had to create the AI code in the first place, right?&lt;/p&gt;
+
+&lt;p&gt;Wrong. We tend to stick to a comfortable lie to have a false sense of security, but in reality &lt;strong&gt;cognitive automation has been going on for a long time&lt;/strong&gt;, as explained in this excellent video from &lt;a href=&quot;https://www.youtube.com/user/cgpgrey&quot;&gt;CGP Grey&lt;/a&gt; channel.&lt;/p&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/7Pq-S557XQU&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;No matter how specialized a workforce, it ends up being replaced, &lt;strong&gt;automation is inevitable&lt;/strong&gt;. After all, no one needs a top-of-the-line solution 100% of the time, often a mid-range solution is enough. Several similar examples have already taken place, so in an era where code can be generated by AIs, &lt;strong&gt;entry into the workforce will become increasingly difficult.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;the-dystopian-truth&quot;&gt;The dystopian truth&lt;/h1&gt;
+
+&lt;p&gt;The parallel between the inevitability of automation and what the AI developed for Github Copilot represents is very well drawn in this video from the &lt;a href=&quot;https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA&quot;&gt;Fireship&lt;/a&gt; channel. And after analyzing the past, it becomes much harder to believe in an optimistic future.&lt;/p&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/4duqI8WyfqE&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;For now, the tool will be used to help programmers perform their role better, but in the not-too-distant future AI will have learned and surpassed its own creators. Whether we are indeed “digging our own pits” toward a dystopian future for programming jobs, only time will tell.&lt;/p&gt;
+
+&lt;p&gt;But on the bright side we will have more free time :smile:&lt;/p&gt;
+
+&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://copilot.github.com/&quot; title=&quot;https://copilot.github.com/&quot;&gt;https://copilot.github.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/&quot; title=&quot;https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/&quot;&gt;https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://minimaxir.com/2021/06/gpt-j-6b/&quot; title=&quot;https://minimaxir.com/2021/06/gpt-j-6b/&quot;&gt;https://minimaxir.com/2021/06/gpt-j-6b/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thenewstack.io/github-copilot-a-powerful-controversial-autocomplete-for-developers/&quot; title=&quot;https://thenewstack.io/github-copilot-a-powerful-controversial-autocomplete-for-developers/&quot;&gt;https://thenewstack.io/github-copilot-a-powerful-controversial-autocomplete-for-developers/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://towardsdatascience.com/should-we-be-worried-now-that-github-copilot-is-out-12f59551cd95&quot; title=&quot;https://towardsdatascience.com/should-we-be-worried-now-that-github-copilot-is-out-12f59551cd95&quot;&gt;https://towardsdatascience.com/should-we-be-worried-now-that-github-copilot-is-out-12f59551cd95&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Yohan Alexander</name></author><category term="en" /><category term="tech" /><category term="posts" /><category term="editor-tools" /><category term="gpt" /><category term="ai" /><category term="GithubCopilot" /><category term="automation" /><category term="text-generation" /><category term="github" /><summary type="html">Why should programmers be concerned about the rise of code-generating AIs?</summary></entry><entry><title type="html">A verdade distópica sobre o Github Copilot (Programadores Não Precisam Se Candidatar)</title><link href="https://yohanalexander.github.io/posts/2021/07/a-verdade-github-copilot/" rel="alternate" type="text/html" title="A verdade distópica sobre o Github Copilot (Programadores Não Precisam Se Candidatar)" /><published>2021-07-02T00:00:00-03:00</published><updated>2021-07-02T00:00:00-03:00</updated><id>https://yohanalexander.github.io/posts/2021/07/a-verdade-github-copilot</id><content type="html" xml:base="https://yohanalexander.github.io/posts/2021/07/a-verdade-github-copilot/">&lt;p&gt;Essa semana a chegada do &lt;a href=&quot;https://copilot.github.com/&quot; title=&quot;Github Copilot&quot;&gt;Github Copilot&lt;/a&gt; agitou a comunidade dos desenvolvedores de software por seu funcionamento bastante impressionante &lt;del&gt;apesar de ainda imperfeito&lt;/del&gt;, &lt;strong&gt;mas será que a comunidade ficou preocupada como deveria?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Meet GitHub Copilot - your AI pair programmer. &lt;a href=&quot;https://t.co/eWPueAXTFt&quot;&gt;https://t.co/eWPueAXTFt&lt;/a&gt; &lt;a href=&quot;https://t.co/NPua5K2vFS&quot;&gt;pic.twitter.com/NPua5K2vFS&lt;/a&gt;&lt;/p&gt;— GitHub (@github) &lt;a href=&quot;https://twitter.com/github/status/1409883156333879300?ref_src=twsrc%5Etfw&quot;&gt;June 29, 2021&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;A &lt;a href=&quot;https://openai.com/&quot; title=&quot;OpenAI&quot;&gt;OpenAI&lt;/a&gt; e o &lt;a href=&quot;https://github.com/&quot; title=&quot;GitHub&quot;&gt;GitHub&lt;/a&gt; anunciaram o &lt;strong&gt;technical preview&lt;/strong&gt; da IA que promete ser o seu novo &lt;strong&gt;pair programmer&lt;/strong&gt;. O &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Copilot&lt;/code&gt; funciona como uma extensão as IDEs, compativível até agora com o VSCode, semelhante as ferramentas para autocomplete de código alimentada por IAs como o &lt;a href=&quot;https://www.tabnine.com/&quot; title=&quot;Tabnine&quot;&gt;Tabnine&lt;/a&gt;, porém com diferenças fundamentais.&lt;/p&gt;
+
+&lt;h1 id=&quot;como-o-copilot-funciona&quot;&gt;Como o Copilot funciona?&lt;/h1&gt;
+
+&lt;p&gt;A ferramenta é fruto do investimento de &lt;a href=&quot;https://news.microsoft.com/2019/07/22/openai-forms-exclusive-computing-partnership-with-microsoft-to-build-new-azure-ai-supercomputing-technologies/&quot;&gt;1 bilhão de doláres&lt;/a&gt; da  &lt;a href=&quot;https://www.microsoft.com/&quot; title=&quot;Microsoft&quot;&gt;Microsoft&lt;/a&gt; na OpenAI, uma empresa especializada no desenvolvimento e pesquisa de &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Artificial General Intelligence&lt;/code&gt;. “O &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Copilot&lt;/code&gt; preenche automaticamente trechos de código, sugere novas linhas e pode até mesmo escrever funções inteiras com base na descrição fornecida”, disse o CEO do Github, Nat Friedman, em um &lt;a href=&quot;https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/&quot; title=&quot;blog post&quot;&gt;blog post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://copilot.github.com/diagram.png&quot; alt=&quot;Github Copilot&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Em sua essência, o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Copilot&lt;/code&gt; usa um novo algoritmo de geração de código da OpenAI chamado &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Codex&lt;/code&gt;. O CEO da OpenAI, Greg Brockman, o descreve como descendente da GPT-3, mas com foco em geração de código. O algoritmo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Codex&lt;/code&gt; foi treinado em terabytes de código público extraído do GitHub e &lt;a href=&quot;https://stackoverflow.com/&quot; title=&quot;StackOverflow&quot;&gt;StackOverflow&lt;/a&gt;. &lt;strong&gt;Isso dá à ferramenta a capacidade de escrever código baseado em contexto com precisão sem precedentes.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Você pode se divertir com algumas sugestões de IAs para códigos filosóficos no &lt;a href=&quot;https://minimaxir.com/2021/06/gpt-j-6b/&quot;&gt;blog post do Max Woolf&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;should_terminate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;&quot;&quot;&quot;Check whether a Person should be terminated&quot;&quot;&quot;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Person&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;id&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;#terminate
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;#continue
+&lt;/span&gt;        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;a-inevitabilidade-da-automação&quot;&gt;A inevitabilidade da automação&lt;/h1&gt;
+
+&lt;p&gt;Mas será que as intenções da Microsoft (uma empresa multi-bilionária) são puramente benevolentes e a favor da comunidade? Por mais que uma empresa seja amiga da comunidade, &lt;strong&gt;o princípio do capitalismo é o lucro&lt;/strong&gt;, e o lucro obtido ao eliminar a mão de obra especializada e bastante cara de programadores supera qualquer benefício amigável divulgado.&lt;/p&gt;
+
+&lt;p&gt;A princípio você pode rejeitar a ideia de que seu emprego vai ser tomado por uma IA geradora de códigos, afinal um programador teve que criar o código da IA em primeiro lugar, certo?&lt;/p&gt;
+
+&lt;p&gt;Errado. A gente tende a se prender a uma mentira confortável para ter um falso senso de segurança, mas na realidade &lt;strong&gt;a automação cognitiva já vem acontecendo de longa data&lt;/strong&gt;, como é explicado neste excelente vídeo do canal &lt;a href=&quot;https://www.youtube.com/user/cgpgrey&quot;&gt;CGP Grey&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/7Pq-S557XQU&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;Por mais especializada que seja uma mão de obra, ela acaba sendo substituída, &lt;strong&gt;a automação é inevitável&lt;/strong&gt;. Afinal, ninguém precisa de uma solução top de linha 100% do tempo, muitas vezes uma solução mediana é suficiente. Diversos exemplos semelhantes já aconteceram, e por isso, em uma era onde código pode ser gerado por IAs, &lt;strong&gt;a entrada no mercado de trabalho se tornará cada vez mais difícil.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;a-verdade-distópica&quot;&gt;A verdade distópica&lt;/h1&gt;
+
+&lt;p&gt;O paralelo entre a inevitabilidade da automação, e o que a IA desenvolvida para o Github Copilot representam é muito bem traçada neste vídeo do canal &lt;a href=&quot;https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA&quot;&gt;Fireship&lt;/a&gt;. E após analisar o passado, fica bem mais difícil acreditar em um futuro otimista.&lt;/p&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/4duqI8WyfqE&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;Por enquanto, a ferramenta será usada para auxiliar os programadores a desempenhar sua função melhor, porém em um futuro não tão distante a IA terá aprendido e superado seus próprios criadores. Se de fato estamos “cavando nossas próprias covas” em direção a um futuro distópico para as vagas em programação, somente o tempo dirá.&lt;/p&gt;
+
+&lt;p&gt;Mas pelo lado bom teremos mais tempo livre :smile:&lt;/p&gt;
+
+&lt;h1 id=&quot;leituras-complementares&quot;&gt;Leituras complementares&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://copilot.github.com/&quot; title=&quot;https://copilot.github.com/&quot;&gt;https://copilot.github.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/&quot; title=&quot;https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/&quot;&gt;https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://minimaxir.com/2021/06/gpt-j-6b/&quot; title=&quot;https://minimaxir.com/2021/06/gpt-j-6b/&quot;&gt;https://minimaxir.com/2021/06/gpt-j-6b/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://thenewstack.io/github-copilot-a-powerful-controversial-autocomplete-for-developers/&quot; title=&quot;https://thenewstack.io/github-copilot-a-powerful-controversial-autocomplete-for-developers/&quot;&gt;https://thenewstack.io/github-copilot-a-powerful-controversial-autocomplete-for-developers/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://towardsdatascience.com/should-we-be-worried-now-that-github-copilot-is-out-12f59551cd95&quot; title=&quot;https://towardsdatascience.com/should-we-be-worried-now-that-github-copilot-is-out-12f59551cd95&quot;&gt;https://towardsdatascience.com/should-we-be-worried-now-that-github-copilot-is-out-12f59551cd95&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Yohan Alexander</name></author><category term="tech" /><category term="pt-br" /><category term="posts" /><category term="editor-tools" /><category term="ai" /><category term="gpt" /><category term="GithubCopilot" /><category term="text-generation" /><category term="automation" /><category term="github" /><summary type="html">Porquê os programadores deveriam ficar preocupados com a acensão das IAs geradoras de código?</summary></entry><entry><title type="html">Commit messages are underestimated (and shouldn’t be)</title><link href="https://yohanalexander.github.io/posts/2021/04/commit-messages-are-underestimated/" rel="alternate" type="text/html" title="Commit messages are underestimated (and shouldn’t be)" /><published>2021-04-30T00:00:00-03:00</published><updated>2021-04-30T00:00:00-03:00</updated><id>https://yohanalexander.github.io/posts/2021/04/commit-messages-are-underestimated</id><content type="html" xml:base="https://yohanalexander.github.io/posts/2021/04/commit-messages-are-underestimated/">&lt;p&gt;Any developer who has spent the minimum amount of time browsing a repository’s history knows: &lt;strong&gt;commit messages are important&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;But if this is a well-established truth, why does anyone who already has a certain level of experience with code versioning end up neglecting commit messages?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://workchronicles.com/commit-messages/&quot;&gt;&lt;img src=&quot;https://i0.wp.com/workchronicles.com/wp-content/uploads/2020/08/Small-Changes.png&quot; alt=&quot;Work Chronicles&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As with any good programming or code versioning practice, commit messages require awareness. And regardless of the seniority of the developer, there are factors that can hinder the writing of a good message.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Hurry&lt;/strong&gt; &lt;del&gt;the enemy of perfection&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It has to be deployed to production today…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Laziness&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You may be deluded by ideas like “these are just trivial changes”, “but nobody will read this later”, “everyone knows what I’m doing”.&lt;/p&gt;
+
+&lt;p&gt;The messages must adequately communicate the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WHY&lt;/code&gt; a change has been made. Understanding that the history must remain with the context of each change that occurred, makes collaboration and development more efficient.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Lack of atomicity&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Do you know when you get so messed up when writing a message because nothing describes the full context of the change?&lt;/p&gt;
+
+&lt;p&gt;Commits that encompass many changes are bad versioning practice, and the confusion in creating a message already indicates this. The logic of the changes must be divided into &lt;a href=&quot;https://www.freshconsulting.com/atomic-commits/&quot;&gt;atoms&lt;/a&gt;, very simple units that implement a single functionality or correct a specific error. And commits are an instance of these changes, a simplified representation of what the complete logic represents.&lt;/p&gt;
+
+&lt;p&gt;In future posts I will talk about how to use &lt;a href=&quot;/tags/#git&quot;&gt;GIT&lt;/a&gt; tool efficiently and to your advantage, exemplifying when, where and how to commit.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Imprudence&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You already know that it is important, you have the expertise of the tool, and yet you decide to do it wrong. &lt;del&gt;shame on you&lt;/del&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;why-write-an-excellent-commit-message&quot;&gt;Why write an excellent commit message?&lt;/h1&gt;
+
+&lt;p&gt;But if you’re still not convinced why you should write such an excellent commit message, let’s recreate a common scenario in the developers careers.&lt;/p&gt;
+
+&lt;p&gt;You receive a medium priority demand from your PO with the “correct error in the user registration” task. Determined to solve the problem efficiently, you browse the repository to find the bug in the scope of the registration. To your surprise, the methods have no documentation, no tests, and you understand absolutely nothing about the diff of the modified files. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git blame&lt;/code&gt; points out that the last commit was made 1 month ago at 01:37 am on a Friday with the message “small changes”. After taking a deep breath for having your inner peace briefly shaken, you check the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git log&lt;/code&gt; to understand the previous commits, and are faced with quite &lt;em&gt;explicative&lt;/em&gt; messages such as “fixing a bug”, “adding method”, “making changes to the method”, “improving fixes”, and etc.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A well thought commit message is the best way to communicate the context of a change, whether to other developers, or even to yourself in the future.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;but-how-do-you-become-an-craftsman-of-commit-messages&quot;&gt;But how do you become an craftsman of commit messages?&lt;/h1&gt;
+
+&lt;p&gt;First of all, it is necessary to understand that excellent commit messages do not happen by chance. You will never come across an impeccable message history, where employees have not taken the necessary care with each of the commits. Excellence is the result of good practices applied daily.&lt;/p&gt;
+
+&lt;p&gt;And to guide our practices, there are conventions and standards (each team must agree on what best suits their reality).&lt;/p&gt;
+
+&lt;h2 id=&quot;conventional-commits&quot;&gt;Conventional Commits&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.conventionalcommits.org/en/v1.0.0/&quot;&gt;Conventional Commits&lt;/a&gt; -or semantic commits- is a commit message convention, to help maintain an explicit and well-structured commit history. By following this type of convention, we can automate the creation of &lt;a href=&quot;https://keepachangelog.com/en/1.0.0/&quot;&gt;CHANGELOGs&lt;/a&gt;, facilitate the entry of new developers to the project, in addition to being able to understand where the hours of the project (in code refactoring, feature creation, or bug fixes).&lt;/p&gt;
+
+&lt;p&gt;For those who don’t know it yet, this is the standard form for a semantic commit:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[type](optional scope): [subject]
+
+[optional body]
+
+[optional footer]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;A practical example:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fix(containers/profile): adjust argument of  getThumbnailImage function
+
+getThumbnailImage used to receive argument of type XPTO.
+Now receives the correct argument of type FOO.
+
+
+Solves issue #132
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;types-of-commits&quot;&gt;Types of commits&lt;/h3&gt;
+
+&lt;p&gt;The type of a commit is the initial description of what the commit is doing and there is a well-defined list:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;test&lt;/strong&gt;: indicates any type of code creation or changing test codes. Example: Creation of unit tests.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;feat&lt;/strong&gt;: indicates the development of a new feature to the project. Example: Adding a service, functionality, endpoint, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;refactor&lt;/strong&gt;: used when there is refactoring of code that does not have any impact on the logic or business rules of the system. Example: Code changes after a code review.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;style&lt;/strong&gt;: used when there are changes in formatting and style of the code that do not alter the system in any way. Example: Change the style-guide, fix indentations, remove whitespace, remove comments, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;fix&lt;/strong&gt;: used when correcting errors that are generating bugs in the system. Example: Apply treatment to a function that is not behaving as expected and returning an error.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;chore&lt;/strong&gt;: indicates design changes that do not affect the system or test files. Example: Changing environment variables in .env files, adding more file extensions to .gitignore.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;docs&lt;/strong&gt;: used when there are changes to the project documentation. Example: adding information in the API documentation, changing the README, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;build&lt;/strong&gt;: used to indicate changes that affect the project’s build process or external dependencies. Example: adding or removing dependencies from project requirements, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;perf&lt;/strong&gt;: indicates a change that improved the performance of the system. Example: changing ForEach for while, improving the query to the database, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ci&lt;/strong&gt;: used for changes to CI configuration files. Example: Circle, Travis, BrowserStack, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;revert&lt;/strong&gt;: indicates the reversal of a previous commit.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;commit-scopes&quot;&gt;Commit scopes&lt;/h3&gt;
+
+&lt;p&gt;The scope of the commit is an optional part, short and easy to understand. This is where we will indicate which part of the code has been modified, such as a microservice layer for example. In general, the use of the scope is very generic, for example, being able to associate the numbering of tasks if your team follows some agile method.&lt;/p&gt;
+
+&lt;h3 id=&quot;commit-body&quot;&gt;Commit body&lt;/h3&gt;
+
+&lt;p&gt;The body, will contain more accurate descriptions of what is contained in that commit, showing the reasons or consequences generated by this code.&lt;/p&gt;
+
+&lt;h3 id=&quot;commit-footers&quot;&gt;Commit footers&lt;/h3&gt;
+
+&lt;p&gt;The footer is restricted to changes in status, such as resolutions of the status of issues or association of a task. Example: “resolves issue #312”.&lt;/p&gt;
+
+&lt;h3 id=&quot;commit-subject&quot;&gt;Commit subject&lt;/h3&gt;
+
+&lt;p&gt;The subject -or message- is mandatory, and therefore is the most important part of the standard, and must be sufficiently clear as to why the changes in the commit. Remember that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diff&lt;/code&gt; of the changes tells you what has changed, but only the message efficiently represents the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WHY&lt;/code&gt; of the changes.&lt;/p&gt;
+
+&lt;p&gt;In Chris Beams’s &lt;a href=&quot;https://chris.beams.io/posts/git-commit/&quot;&gt;article&lt;/a&gt; 7 rules are also defined for a good message:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#separate&quot;&gt;Separate subject from body with a blank line&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#limit-50&quot;&gt;Limit the subject line to 50 characters&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#capitalize&quot;&gt;Capitalize the subject line&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#end&quot;&gt;Do not end the subject line with a period&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#imperative&quot;&gt;Use the imperative mood in the subject line&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#wrap-72&quot;&gt;Wrap the body at 72 characters&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#why-not-how&quot;&gt;Use the body to explain what and why vs. how&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I am not going to delve into each rule, as most are already self-explanatory. But for some, rule 5, about writing the message in the imperative, generates a slight initial estrangement, because the change implemented was a “past action”, but when writing messages using the imperative mode we are saying &lt;strong&gt;what the commit does if applied&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you were to make a cherry-pick (copy a commit from one branch to another) or a revert for example, that commit will “perform a task” not “performed a task”.&lt;/p&gt;
+
+&lt;p&gt;The golden rule is that the message must complete the sentence:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If applied, this commit will &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;commit message here&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;commit message here&amp;gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Finally, see the real example of a commit made to the core repository of &lt;a href=&quot;https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6&quot;&gt;Bitcoin&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;commit eb0b56b19017ab5c16c745e6da39c53126924ed6
+Author: Pieter Wuille &amp;lt;pieter.wuille@gmail.com&amp;gt;
+Date:   Fri Aug 1 22:57:55 2014 +0200
+
+   Simplify serialize.h's exception handling
+
+   Remove the 'state' and 'exceptmask' from serialize.h's stream
+   implementations, as well as related methods.
+
+   As exceptmask always included 'failbit', and setstate was always
+   called with bits = failbit, all it did was immediately raise an
+   exception. Get rid of those variables, and replace the setstate
+   with direct exception throwing (which also removes some dead
+   code).
+
+   As a result, good() is never reached after a failure (there are
+   only 2 calls, one of which is in tests), and can just be replaced
+   by !eof().
+
+   fail(), clear(n) and exceptions() are just never called. Delete
+   them.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;further-reading&quot;&gt;Further reading&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/&quot;&gt;How to Write a Git Commit Message&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://who-t.blogspot.com/2009/12/on-commit-messages.html&quot;&gt;On Commit Messages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html&quot;&gt;A Note About Git Commit Messages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines&quot;&gt;Commit Guidelines&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.freshconsulting.com/atomic-commits/&quot;&gt;Keep Your Commits “Atomic”&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.conventionalcommits.org/en/v1.0.0/&quot;&gt;Conventional Commits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://keepachangelog.com/en/1.0.0/&quot;&gt;Keep a Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Yohan Alexander</name></author><category term="posts" /><category term="en" /><category term="tutorials" /><category term="git" /><category term="github" /><category term="good-practices" /><summary type="html">Why commit messages are important and how to become an craftsman on writing them.</summary></entry><entry><title type="html">Mensagens de commit são subestimadas (e não deveriam)</title><link href="https://yohanalexander.github.io/posts/2021/04/mensagens-de-commit-sao-subestimadas/" rel="alternate" type="text/html" title="Mensagens de commit são subestimadas (e não deveriam)" /><published>2021-04-30T00:00:00-03:00</published><updated>2021-04-30T00:00:00-03:00</updated><id>https://yohanalexander.github.io/posts/2021/04/mensagens-de-commit-sao-subestimadas</id><content type="html" xml:base="https://yohanalexander.github.io/posts/2021/04/mensagens-de-commit-sao-subestimadas/">&lt;p&gt;Todo desenvolvedor que já passou o mínimo de tempo navegando o histórico de um repositório sabe: &lt;strong&gt;mensagens de commits são importantes&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mas se isso é uma verdade bem estabelecida, por que quem já tem um certo nível de experiência com versionamento de código acaba negligenciando as mensagens de commit?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://workchronicles.com/commit-messages/&quot;&gt;&lt;img src=&quot;https://i0.wp.com/workchronicles.com/wp-content/uploads/2020/08/Small-Changes.png&quot; alt=&quot;Work Chronicles&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Assim como qualquer outra boa prática de programação ou versionamento de código, as mensagens de commit requerem consciência. E independente da senioriade do desenvolvedor, existem fatores que podem atrapalhar a escrita de uma boa mensagem.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Pressa&lt;/strong&gt; &lt;del&gt;a inimiga da perfeição&lt;/del&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tem que subir pra produção ainda hoje…&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Preguiça&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Você pode se iludir por ideias como “são apenas alterações triviais”, “mas ninguém vai ler isso depois”, “todos sabem o que estou fazendo”.&lt;/p&gt;
+
+&lt;p&gt;As mensagens devem comunicar de forma adequada o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PORQUE&lt;/code&gt; de uma alteração ter sido feita. Entender que o histórico deve permanecer com o contexto de cada mudança ocorrida, faz a colaboração e o desenvolvimento mais eficientes.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Falta de atomicidade&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Sabe quando você se atrapalha muito na hora de escrever uma mensagem porque nada descreve o contexto completo da mudança?&lt;/p&gt;
+
+&lt;p&gt;Commits que englobam muitas mudanças são uma prática ruim de versionamento, e a própria confusão ao criar uma mensagem já indica isso. A lógica das alterações devem ser divididas em &lt;a href=&quot;https://www.freshconsulting.com/atomic-commits/&quot;&gt;átomos&lt;/a&gt;, unidades bem simples que implementam uma única funcionalidade ou corrigem um erro específico. E os commits são uma instância dessas alterações, uma representação simplificada do que a lógica completa representa.&lt;/p&gt;
+
+&lt;p&gt;Em posts futuros falarei sobre como usar a ferramenta do &lt;a href=&quot;/tags/#git&quot;&gt;GIT&lt;/a&gt; de forma eficiente e a seu favor, exemplificando quando, onde e como commitar.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Imprudência&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Você já sabe que é importante, tem a expertise da ferramenta, e ainda assim decide fazer errado. &lt;del&gt;shame on you&lt;/del&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;por-que-escrever-uma-excelente-mensagem-de-commit&quot;&gt;Por que escrever uma excelente mensagem de commit?&lt;/h1&gt;
+
+&lt;p&gt;Mas se ainda assim você não se sentiu convencido do porque escrever uma excelente mensagem de commit, vamos recriar um cenário comum na carreira dos desenvolvedores.&lt;/p&gt;
+
+&lt;p&gt;Você recebe do seu PO uma demanda de prioridade média com a task “corrigir erro no cadastro de usuários”. Determinado a resolver o problema de forma eficiente, você navega pelo repositório para encontrar o bug no escopo do cadastro. Para a sua surpresa, os métodos não tem documentação, nem testes, e você não entende absolutamente nada pelo diff dos arquivos modificados. O &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git blame&lt;/code&gt; aponta que o último commit foi feito há 1 mês às 01:37 da manhã de uma sexta-feira com a mensagem “pequenas alterações”. Após respirar fundo por ter a sua paz interior brevemente abalada, você checa o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git log&lt;/code&gt; para entender os commits anteriores, e se depara com mensagens bastante &lt;em&gt;explicativas&lt;/em&gt; como “consertando bug”, “adicionando método”, “fazendo alterações no método”, “melhorando correções”, e etc.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Uma mensagem de commit bem pensada é a melhor maneira de comunicar o contexto de uma mudança, seja para outros desenvolvedores, ou até para você mesmo no futuro.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;mas-como-se-tornar-um-artesão-de-mensagens-de-commit&quot;&gt;Mas como se tornar um artesão de mensagens de commit?&lt;/h1&gt;
+
+&lt;p&gt;Antes de tudo é preciso entender que mensagens de commit excelentes não surgem por acaso. Você nunca irá se deparar com um histórico de mensagens impecável, onde os colaboradores não tiveram o cuidado necessário com cada um dos commits. Excelência
+é fruto de boas práticas aplicadas no dia a dia.&lt;/p&gt;
+
+&lt;p&gt;E para guiar nossas práticas, existem as convenções e padronizações (cada time deve entrar em acordo do que melhor se adequa a sua realidade).&lt;/p&gt;
+
+&lt;h2 id=&quot;o-conventional-commits&quot;&gt;O Conventional Commits&lt;/h2&gt;
+
+&lt;p&gt;O &lt;a href=&quot;https://www.conventionalcommits.org/en/v1.0.0/&quot;&gt;Conventional Commits&lt;/a&gt; -ou commits semânticos- é uma convenção de mensagens de commit, para ajudar a manter um histórico de commits explícito e bem estruturado. Ao seguir esse tipo de convenção, podemos automatizar a criação de &lt;a href=&quot;https://keepachangelog.com/en/1.0.0/&quot;&gt;CHANGELOGs&lt;/a&gt;, facilitar a entrada de novos desenvolvedores no projeto, além de conseguir entender onde está se concentrando as horas do projeto (em refatoração de código, criação de features, ou fix de bugs).&lt;/p&gt;
+
+&lt;p&gt;Para quem ainda não conhece, esse é o formato padrão de um commit semântico:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[tipo](escopo opcional): [assunto]
+
+[corpo opcional]
+
+[rodapé opcional]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Um exemplo prático:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fix(containers/profile): adjust argument of  getThumbnailImage function
+
+getThumbnailImage used to receive argument of type XPTO.
+Now receives the correct argument of type FOO.
+
+
+Solves issue #132
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;tipos-de-commits&quot;&gt;Tipos de commits&lt;/h3&gt;
+
+&lt;p&gt;O tipo de um commit é a descrição inicial do que o commit está realizando e são uma lista bem definida:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;test&lt;/strong&gt;: indica qualquer tipo de criação ou alteração de códigos de teste. Exemplo: Criação de testes unitários.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;feat&lt;/strong&gt;: indica o desenvolvimento de uma nova feature ao projeto. Exemplo: Acréscimo de um serviço, funcionalidade, endpoint, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;refactor&lt;/strong&gt;: usado quando houver uma refatoração de código que não tenha qualquer tipo de impacto na lógica ou regras de negócio do sistema. Exemplo: Mudanças de código após um code review.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;style&lt;/strong&gt;: empregado quando há mudanças de formatação e estilo do código que não alteram o sistema de nenhuma forma. Exemplo: Mudar o style-guide, arrumar indentações, remover espaços em brancos, remover comentários, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;fix&lt;/strong&gt;: utilizado quando há correção de erros que estão gerando bugs no sistema. Exemplo: Aplicar tratativa para uma função que não está tendo o comportamento esperado e retornando erro.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;chore&lt;/strong&gt;: indica mudanças no projeto que não afetem o sistema ou arquivos de testes. Exemplo: Mudar variáveis de ambiente em arquivos .env, adicionar mais extensões de arquivos ao .gitignore.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;docs&lt;/strong&gt;: usado quando há mudanças na documentação do projeto. Exemplo: adicionar informações na documentação da API, mudar o README, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;build&lt;/strong&gt;: utilizada para indicar mudanças que afetam o processo de build do projeto ou dependências externas. Exemplo: adicionar ou remover dependências do requirements do projeto, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;perf&lt;/strong&gt;: indica uma alteração que melhorou a performance do sistema. Exemplo: alterar ForEach por while, melhorar a query ao banco, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ci&lt;/strong&gt;: utilizada para mudanças nos arquivos de configuração de CI. Exemplo: Circle, Travis, BrowserStack, etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;revert&lt;/strong&gt;: indica a reversão de um commit anterior.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;escopos-de-commits&quot;&gt;Escopos de commits&lt;/h3&gt;
+
+&lt;p&gt;O escopo do commit é uma parte opcional, curta e de fácil compreensão.  É nela que iremos indicar qual parte do código foi modificada, como a camada de um microsserviço por exemplo. Em geral, a utilização do escopo é bem genérica, podendo por exemplo associar a numeração de tasks caso sua equipe siga alguma metodologia ágil.&lt;/p&gt;
+
+&lt;h3 id=&quot;corpos-de-commits&quot;&gt;Corpos de commits&lt;/h3&gt;
+
+&lt;p&gt;O corpo, por sua vez, vai conter descrições mais precisas do que está contido naquele commit, mostrando as razões ou consequências geradas por esse código.&lt;/p&gt;
+
+&lt;h3 id=&quot;rodapés-de-commits&quot;&gt;Rodapés de commits&lt;/h3&gt;
+
+&lt;p&gt;O rodapé restringe-se às alterações de estado, como resoluções do estado de issues ou associação de uma task. Exemplo: “resolves issue #312”.&lt;/p&gt;
+
+&lt;h3 id=&quot;assuntos-de-commits&quot;&gt;Assuntos de commits&lt;/h3&gt;
+
+&lt;p&gt;O assunto -ou mensagem- é obrigatório, e por isso é a parte mais importante do padrão, e deve ser suficientemente clara sobre o porque das alterações no commit. Lembre que o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diff&lt;/code&gt; das alterações te diz o que mudou, mas somente a mensagem representa de forma eficiente o &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PORQUE&lt;/code&gt; das alterações.&lt;/p&gt;
+
+&lt;p&gt;No &lt;a href=&quot;https://chris.beams.io/posts/git-commit/&quot;&gt;artigo&lt;/a&gt; de Chris Beams são definidas também 7 regras para uma boa mensagem:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#separate&quot;&gt;Separe o assunto do corpo com uma linha em branco&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#limit-50&quot;&gt;Limite a linha de assunto a 50 caracteres&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#capitalize&quot;&gt;Coloque a linha de assunto em maiúscula&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#end&quot;&gt;Não termine a linha de assunto com um ponto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#imperative&quot;&gt;Use o modo imperativo na linha de assunto&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#wrap-72&quot;&gt;Envolva o corpo em até 72 caracteres&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/#why-not-how&quot;&gt;Use o corpo para explicar o quê e por quê vs. como&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Não vou me aprofundar em cada regra, pois a maioria já é auto explicativa. Mas para alguns, a regra 5, sobre escrever a mensagem no imperativo gera um leve estranhamento inicial, pois a mudança implementada foi uma “ação passada”, mas ao escrever mensagens utilizando o modo imperativo nós estamos dizendo &lt;strong&gt;o que o commit faz se aplicado&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Se você fosse fizer um cherry-pick (copiar um commit de uma brancha pra outra) ou um revert por exemplo, aquele commit vai “realizar uma tarefa” não vai “realizou uma tarefa”.&lt;/p&gt;
+
+&lt;p&gt;A regra de ouro é que a mensagem deve completar a frase:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Se aplicado, esse commit vai &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mensagem de commit aqui&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git commit &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;mensagem de commit aqui&amp;gt;&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Por fim, veja o exemplo real de um commit feito para o repositório core do &lt;a href=&quot;https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6&quot;&gt;Bitcoin&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;commit eb0b56b19017ab5c16c745e6da39c53126924ed6
+Author: Pieter Wuille &amp;lt;pieter.wuille@gmail.com&amp;gt;
+Date:   Fri Aug 1 22:57:55 2014 +0200
+
+   Simplify serialize.h's exception handling
+
+   Remove the 'state' and 'exceptmask' from serialize.h's stream
+   implementations, as well as related methods.
+
+   As exceptmask always included 'failbit', and setstate was always
+   called with bits = failbit, all it did was immediately raise an
+   exception. Get rid of those variables, and replace the setstate
+   with direct exception throwing (which also removes some dead
+   code).
+
+   As a result, good() is never reached after a failure (there are
+   only 2 calls, one of which is in tests), and can just be replaced
+   by !eof().
+
+   fail(), clear(n) and exceptions() are just never called. Delete
+   them.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;leituras-complementares&quot;&gt;Leituras complementares&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chris.beams.io/posts/git-commit/&quot;&gt;How to Write a Git Commit Message&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://who-t.blogspot.com/2009/12/on-commit-messages.html&quot;&gt;On Commit Messages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html&quot;&gt;A Note About Git Commit Messages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.git-scm.com/book/en/v2/Distributed-Git-Contributing-to-a-Project#_commit_guidelines&quot;&gt;Commit Guidelines&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.freshconsulting.com/atomic-commits/&quot;&gt;Keep Your Commits “Atomic”&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.conventionalcommits.org/en/v1.0.0/&quot;&gt;Conventional Commits&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://keepachangelog.com/en/1.0.0/&quot;&gt;Keep a Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Yohan Alexander</name></author><category term="posts" /><category term="pt-br" /><category term="tutorials" /><category term="git" /><category term="github" /><category term="good-practices" /><summary type="html">Porquê mensagens de commit são importantes e como se tornar um artesão ao escrevê-lás.</summary></entry><entry><title type="html">Welcome to my blog!</title><link href="https://yohanalexander.github.io/posts/2021/01/welcome-to-my-blog/" rel="alternate" type="text/html" title="Welcome to my blog!" /><published>2021-01-18T00:00:00-03:00</published><updated>2021-01-18T00:00:00-03:00</updated><id>https://yohanalexander.github.io/posts/2021/01/welcome-to-my-blog</id><content type="html" xml:base="https://yohanalexander.github.io/posts/2021/01/welcome-to-my-blog/">&lt;p&gt;Welcome to my blog!&lt;/p&gt;
+
+&lt;p&gt;In the end of 2020 &lt;del&gt;and this bizarre situation that the world started to face&lt;/del&gt; I decided to start writing a blog.&lt;/p&gt;
+
+&lt;p&gt;The main idea is to share any insigth or interesting technology I discovered while working on various projects.&lt;/p&gt;
+
+&lt;p&gt;Posts about new tools and technologies are likely to be shorter to keep things straight, and in a format similar to tutorials, to show the reader the way to get the same results I did.&lt;/p&gt;
+
+&lt;p&gt;Eventually I’ll also talk more openly on more theoretical issues,
+such as good programming practices (&lt;a href=&quot;/tags/#design-patterns&quot;&gt;Design Patterns&lt;/a&gt;, &lt;a href=&quot;/tags/#clean-code&quot;&gt;Clean Code&lt;/a&gt;, &lt;a href=&quot;/tags/#clean-architecture&quot;&gt;Clean Architecture&lt;/a&gt;, &lt;a href=&quot;/tags/#tdd&quot;&gt;TDD&lt;/a&gt;, &lt;a href=&quot;/tags/#bdd&quot;&gt;BDD&lt;/a&gt;, &lt;a href=&quot;/tags/#ddd&quot;&gt;DDD&lt;/a&gt;) and the challenges on designing scalable software, in addition to information security and data science.&lt;/p&gt;
+
+&lt;p&gt;In a next post I will talk about how I built the entire infrastructure for making this blog available, so that the writing is minimalist and quite simple.&lt;/p&gt;</content><author><name>Yohan Alexander</name></author><category term="posts" /><category term="en" /><category term="hello-world" /><category term="technology" /><summary type="html">A brief post to startup my blog.</summary></entry><entry><title type="html">Bem vindo ao meu blog!</title><link href="https://yohanalexander.github.io/posts/2021/01/bem-vindo-ao-meu-blog/" rel="alternate" type="text/html" title="Bem vindo ao meu blog!" /><published>2021-01-18T00:00:00-03:00</published><updated>2021-01-18T00:00:00-03:00</updated><id>https://yohanalexander.github.io/posts/2021/01/bem-vindo-ao-meu-blog</id><content type="html" xml:base="https://yohanalexander.github.io/posts/2021/01/bem-vindo-ao-meu-blog/">&lt;p&gt;Bem vindo ao meu blog!&lt;/p&gt;
+
+&lt;p&gt;No final do ano de 2020 &lt;del&gt;e dessa situção bizarra que o mundo passou a enfrentar&lt;/del&gt; decidi começar a escrever um blog.&lt;/p&gt;
+
+&lt;p&gt;A ideia é compartilhar qualquer conhecimento interessante sobre tecnologia que descobri enquanto trabalho em vários projetos.&lt;/p&gt;
+
+&lt;p&gt;As postagens sobre ferramentas e tecnologias novas provavelmente serão mais curtas para manter as coisas direto ao ponto, e em um formato parecido com tutoriais, para indicar ao leitor o caminho para obter os mesmos resultados que obtive.&lt;/p&gt;
+
+&lt;p&gt;Eventualmente falarei também de forma mais aberta sobre assuntos mais teóricos,
+como boas práticas de programação (&lt;a href=&quot;/tags/#design-patterns&quot;&gt;Design Patterns&lt;/a&gt;, &lt;a href=&quot;/tags/#clean-code&quot;&gt;Clean Code&lt;/a&gt;, &lt;a href=&quot;/tags/#clean-architecture&quot;&gt;Clean Architecture&lt;/a&gt;, &lt;a href=&quot;/tags/#tdd&quot;&gt;TDD&lt;/a&gt;, &lt;a href=&quot;/tags/#bdd&quot;&gt;BDD&lt;/a&gt;, &lt;a href=&quot;/tags/#ddd&quot;&gt;DDD&lt;/a&gt;) e os desafios na construção de softwares escaláveis, além de segurança da informação e ciência de dados.&lt;/p&gt;
+
+&lt;p&gt;Em um próximo post falarei sobre como construí toda a infraestrutura de disponibilização desse blog, para que a escrita seja minimalista e bastante simples.&lt;/p&gt;</content><author><name>Yohan Alexander</name></author><category term="posts" /><category term="pt-br" /><category term="hello-world" /><category term="technology" /><summary type="html">Um breve post para introduzir o meu blog.</summary></entry></feed>
