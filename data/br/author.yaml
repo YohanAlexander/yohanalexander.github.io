@@ -2,7 +2,7 @@
 name: "Yohan Alexander"
 nickname: "Yohan"
 # greeting message before your name. it will default to "Hi! I am" if not provided
-greeting: "Hi, I am"
+greeting: "Oi, me chamo"
 image: "images/author/yohan.png"
 # give your some contact information. they will be used in the footer
 contactInfo:
@@ -14,4 +14,4 @@ contactInfo:
 
 # some summary about what you do
 summary:
-  - I am a Software Engineer at Uber
+  - Sou engenheiro de software na Uber

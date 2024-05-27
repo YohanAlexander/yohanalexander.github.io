@@ -2,8 +2,8 @@
 section:
   name: সাফল্য
   id: accomplishments
-  enable: true
-  weight: 7
+  enable: false
+  weight: 8
   showOnNavbar: true
   # Can optionally hide the title in sections
   # hideTitle: true
@@ -42,4 +42,3 @@ accomplishments:
     url: https://www.udemy.com
   courseOverview: প্রতিক্রিয়াশীল এবং উচ্চ কার্যকারিতা সফ্টওয়্যার কীভাবে তৈরি করবেন তা আবিষ্কার করুন। গোলংয়ের সাথে এমন প্রোগ্রামগুলি বিকাশ করুন যা অত্যন্ত সামঞ্জস্যপূর্ণ এবং সমান্তরাল। আরও উন্নত, বহুগঠনের বিষয়গুলির সাথে গোতে আপনার প্রোগ্রামিং দক্ষতা উন্নত করুন।
   certificateURL: "https://example.com"
- 

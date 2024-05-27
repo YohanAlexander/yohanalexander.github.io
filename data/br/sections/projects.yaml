@@ -1,30 +1,31 @@
 # section information
 section:
-  name: Projects
+  name: Projetos
   id: projects
   enable: true
   weight: 5
   showOnNavbar: true
+  template: sections/projects.html
   # Can optionally hide the title in sections
   # hideTitle: true
 
 # filter buttons
 buttons:
-- name: All
+- name: Tudo
   filter: "all"
-- name: Professional
+- name: Profissional
   filter: "professional"
-- name: Academic
+- name: Acadêmico
   filter: "academic"
-- name: Hobby
+- name: Pessoal
   filter: "hobby"
 
 # your projects
 projects:
 - name: Z2n
   logo: /images/sections/projects/periodogram.png
-  role: Owner
-  timeline: "Jun 2019 - July 2020"
+  role: Criador
+  timeline: "Jun 2019 - Jul 2020"
   repo: https://github.com/yohanalexander/z2n-periodogram
-  summary: A signal processing CLI tool used to find the period of a given time series.
+  summary: Uma ferramenta CLI de processamento de sinal usada para encontrar o período de uma determinada série temporal.
   tags: ["astrophysics","python","signal-processing"]

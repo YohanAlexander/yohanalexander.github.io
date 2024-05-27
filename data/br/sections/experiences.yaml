@@ -1,0 +1,68 @@
+# section information
+section:
+  name: Experiências
+  id: experiences
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  template: sections/experiences.html
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your experiences
+experiences:
+- company:
+    name: Uber
+    url: "https://www.uber.com"
+    location: Remoto
+    logo: /images/sections/experiences/uber.jpg
+    # Can optionally show a different logo for dark theme
+    # darklogo: /images/sections/experiences/company1.jpg
+    # company overview
+    overview: Grande empresa de tecnologia que mudou para sempre o negócio da mobilidade no mundo.
+  positions:
+  - designation: Software Engineer
+    start: Jul 2023
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Aumentou de usuários ativos mensais e GB anuais por meio de campanhas direcionadas a maior visibilidade do produto.
+    - Reduziu custos de infraestrutura em milhões de dólares ao portar sistemas de empresas adquiridas para os principais data centers da Uber.
+    - Usou A/B testing para lançar gradualmente recursos e analisar as principais métricas de desempenho de negócios.
+
+
+- company:
+    name: Cornershop
+    url: "https://cornershopapp.com/"
+    location: Remote
+    logo: /images/sections/experiences/cornershop.jpg
+    # Can optionally show a different logo for dark theme
+    # darklogo: /images/sections/experiences/company2.jpg
+    overview: Startup unicórnio que impulsionou o negócio de entrega de mantimentos sob demanda.
+  positions:
+  - designation: Software Engineer
+    start: Jul 2021
+    end: Jul 2023
+    responsibilities:
+    - Aprimorou estimativas de tempo criando um mecanismo de cache otimizado como alternativa a modelos de dados consultados por meio de APIs de rede.
+    - Implementou tarefas assíncronas para realizar operações em lote no banco de dados com base no processamento de dados carregados em ferramentas internas via arquivos CSV.
+    - Usou conhecimento de máquinas de estado para implementar um mecanismo de regras baseado em domain language que resolvesse automaticamente alertas relacionados à operação.
+
+- company:
+    name: PagueON
+    url: "https://www.pagueon.com.br/"
+    location: Aracaju, Brazil
+    logo: /images/sections/experiences/pagueon.jpg
+    # Can optionally show a different logo for dark theme
+    # darklogo: /images/sections/experiences/company3.jpg
+    overview: Startup Fintech construindo plataformas de software com acesso a recursos bancários.
+  positions:
+  - designation: Software Developer
+    start: Ago 2020
+    end: Jun 2021
+    responsibilities:
+    - Ajudou a ampliar a base de clientes através da implantação de contas bancárias digitais, cartões de débito, pagamento de contas de serviços públicos e boletos bancários.
+    - Preparou a infraestrutura de microsserviços para lidar com milhares de solicitações em uma rede interna baseada em buffers de protocolo expostos através de um API Gateway.
+    - Estabeleceu testes ponta a ponta usando Postman e CI/CD usando Docker e Jenkins.
+    - Usou conhecimento da nuvem AWS aproveitando buckets para armazenar assets.

@@ -1,8 +1,8 @@
 # section information
 section:
-  name: Education
+  name: Educação
   id: education
-  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  template: sections/education.html
   enable: true
   weight: 4
   showOnNavbar: true
@@ -10,11 +10,11 @@ section:
   # hideTitle: true
 
 degrees:
-- name: CNPq Scientific Scholarhip
+- name: Estágio Científico CNPq
   icon: fa-microscope
   timeframe: 2019-2020
   institution:
-    name: Federal Universtity of Sergipe
+    name: Universidade Federal de Sergipe
     url: "https://sites.google.com/academico.ufs.br/astrale/equipe"
     logo: /images/sections/education/ufs.png
     # Can optionally show a different logo for dark theme
@@ -24,13 +24,13 @@ degrees:
     achieved: 5
     outOf: 5
   publications: #(optional)
-  - title: Z2n Periodogram Python Implementation
+  - title: Z2n Periodograma Implementação em Python
     url: "files/z2n-periodogram.pdf"
-- name: B.Sc. in Computer Science
+- name: Bacharelado em Ciências da Computação
   icon: fa-graduation-cap
   timeframe: 2018-2022
   institution:
-    name: Federal Universtity of Sergipe
+    name: Universidade Federal de Sergipe
     url: "https://www.ufs.br/"
     logo: /images/sections/education/ufs.png
     # Can optionally show a different logo for dark theme
@@ -40,22 +40,22 @@ degrees:
     showGrades: false
     collapseAfter: 5
     courses:
-    - name: Data Structures and Algorithms
-    - name: Distributed Systems
-    - name: Network Security
-    - name: Operating Systems
-    - name: Artificial Intelligence
+    - name: Estrutura de dados e Algoritmos
+    - name: Sistemas Distribuídos
+    - name: Redes de Computadores
+    - name: Sistemas Operacionais
+    - name: Inteligenência Artificial
   extracurricularActivities: #(optional)
-  - Developed technical skills in algorithm design and analysis.
-  - Contributed to the academic community through scientific research.
-- name: B.Sc. in Eletronics Engineering
+   - Desenvolveu habilidades técnicas em projeto e análise de algoritmos.
+   - Contribuiu para a comunidade acadêmica por meio de pesquisas científicas.
+- name: Bacharelado em Engenharia Eletrônica
   icon: fa-university
   timeframe: 2016-2017
   institution:
-    name: Federal Universtity of Sergipe
+    name: Universidade Federal de Sergipe
     url: "https://www.ufs.br/"
     logo: /images/sections/education/ufs.png
     # Can optionally show a different logo for dark theme
     # darklogo: /images/sections/education/science_college.png
   extracurricularActivities: #(optional)
-  - Developed technical skills in electronic prototyping.
+  - Desenvolveu habilidades técnicas em prototipagem eletrônica.

@@ -1,0 +1,43 @@
+# section information
+section:
+  name: Habilidades
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  template: sections/skills.html
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: Golang
+  logo: /images/sections/skills/go.png
+  summary: "Utilizando como linguagem principal para o desenvolvimento profissional. Capaz de escrever programas escaláveis, testáveis e de fácil manutenção."
+  url: "https://golang.org/"
+
+- name: Python
+  logo: /images/sections/skills/python.png
+  summary: "Profundo conhecimento dos padrões da linguagem. Usado para aprendizado de máquina e ciência de dados com Jupyter, também desenvolvimento web Django."
+  url: "https://www.python.org/"
+
+- name: Computação Nuvem
+  logo: /images/sections/skills/cloud.png
+  summary: "Trabalhei com a maioria das principais nuvens, como GCP, AWS, Azure etc."
+  url: "https://aws.amazon.com/"
+
+- name: Docker
+  logo: /images/sections/skills/docker.svg
+  summary: "Escrevo a maioria dos programas como contêiner dockerizado. Experiente em processos de construção de vários estágios e vários arcos."
+  url: "https://www.docker.com/"
+
+- name: Linux
+  logo: /images/sections/skills/linux.png
+  summary: "Usado como sistema operacional principal. Capaz de escrever scripts bash/shell."
+  url: "https://www.linux.org/"
+
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: "Experiente com desenvolvimento baseado em git, usa principalmente o Github. Além disso, trabalho com versionamento semântico e git-flow."
+  url: "https://git-scm.com/"

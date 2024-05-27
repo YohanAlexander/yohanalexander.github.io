@@ -2,12 +2,12 @@
 copyright: © 2024 Copyright.
 
 # A disclaimer notice for the footer. Make sure you have set "params.footer.disclaimer.enable: true" in your `config.yaml` file.
-disclaimer: "This theme is under MIT license. So, you can use it for non-commercial, commercial, or private uses.
-You can modify or distribute the theme without requiring any permission from the theme author.
-However, the theme author does not provide any warranty or takes any liability for any issue with the theme."
+disclaimer: "Este tema está sob licença do MIT. Portanto, você pode usá-lo para uso não comercial, comercial ou privado.
+Você pode modificar ou distribuir o tema sem exigir permissão do autor do tema.
+No entanto, o autor do tema não fornece nenhuma garantia nem assume qualquer responsabilidade por qualquer problema com o tema."
 
 # Meta description for your site.  This will help the search engines to find your site.
-description: Portfolio and personal blog of Yohan Alexander.
+description: Portfólio e blog pessoal de Yohan Alexander.
 
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
@@ -24,6 +24,6 @@ customMenus:
 openGraph:
   title: Seamless Coder
   type: website
-  description: Portfolio and personal blog of Yohan Alexander.
+  description: Portfólio e blog pessoal de Yohan Alexander.
   image: images/author/yohan.png
   url: https://yohanalexander.github.io

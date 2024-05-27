@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Publications
+  name: Publicações
   id: publications
   enable: true
   weight: 6
@@ -10,55 +10,55 @@ section:
 
 # filter buttons
 buttons:
-- name: All
+- name: Tudo
   filter: "all"
-- name: "Machine Learning"
+- name: "Aprendizado de Máquina"
   filter: "machine-learning"
-- name: "Signal Processing"
+- name: "Processamento de Dados"
   filter: "signal-processing"
-- name: "Artificial Intelligence"
+- name: "Inteligência Artificial"
   filter: "artificial-intelligence"
 
 # your publications
 publications:
-- title: Z2n periodogram python implementation
+- title: Z2n periodograma implementação em python
   publishedIn:
     name: 30TH EIC UFS
-    date: October 2020
+    date: Outubro 2020
     url: 	http://ri.ufs.br/jspui/handle/riufs/16640
   authors:
   - name: Yohan Franca
     url: https://yohanalexander.github.io
   paper:
-    summary: "CNPq scientific scholarship through the collaboration in the study group on high energy astrophysics that resulted in a scientific computing software for astronomical data analysis techniques."
+    summary: "Bolsa científica do CNPq através da colaboração no grupo de estudos em astrofísica de altas energias que resultou em um software de computação científica para técnicas de análise de dados astronômicos."
     url: files/z2n-periodogram.pdf
   categories: ["machine-learning","signal-processing"]
   tags: ["Astrophysics", "Python", "Signal Processing"]
 
-- title: Robots and the future of work
+- title: Robôs e o futuro dos empregos
   publishedIn:
     name: DCOMP UFS
-    date: September 2019
+    date: Setembro 2019
     url: http://ri.ufs.br/
   authors:
   - name: Yohan Franca
     url: https://yohanalexander.github.io
   paper:
-    summary: "Article that addresses, through a historical argument, the likely impacts of the automation process on the supply of jobs in the global economy."
+    summary: "Artigo que aborda, através de uma argumentação histórica, os prováveis impactos do processo de automação na oferta de empregos na economia global."
     url: files/automation.pdf
   categories: ["artificial-intelligence"]
   tags: ["Artificial Intelligence", "Robots", "Automation"]
 
-- title: The future of the internet
+- title: O futuro da internet
   publishedIn:
     name: DCOMP UFS
-    date: June 2019
+    date: Junho 2019
     url: http://ri.ufs.br/
   authors:
   - name: Yohan Franca
     url: https://yohanalexander.github.io
   paper:
-    summary: "Critical position article on the impact of the internet on human relations and the construction of a planetary cyberdemocracy."
+    summary: "Artigo de posicionamento crítico sobre o impacto da internet nas relações humanas e na construção de uma ciberdemocracia planetária."
     url: files/cyberdemocracy.pdf
   categories: []
   tags: ["Internet", "Cyberdemocracy", "Society"]

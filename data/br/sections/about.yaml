@@ -1,6 +1,6 @@
 # section information
 section:
-  name: About
+  name: Sobre mim
   id: about
   enable: true
   weight: 1
@@ -8,18 +8,14 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer
+designation: Engenheiro de Software
 # your company information
 company:
   name: Uber
   url: "https://www.uber.com"
 
-# your resume. this file path should be relative to you "static" directory
-# Dreprecated. Use resourceLinks instead.
-# resume: "files/resume.pdf"
-
 # a summary about you
-summary: 'Software engineer who helped Uber to migrate a 7 Billion dollar business to deliver groceries on demand, while keeping user retention. Passionate to build a magical user experience, scale systems up, and ship reliable applications.'
+summary: 'Engenheiro de software que ajudou a Uber a migrar um negócio de 7 bilhões de dólares para entregar mantimentos sob demanda, mantendo a retenção de usuários. Apaixonado por criar uma experiência de usuário mágica, ampliar sistemas e fornecer aplicativos confiáveis.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -60,8 +56,8 @@ socialLinks:
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
 resourceLinks:
-- title: "My Resume"
-  url: "files/resume.pdf"
+- title: "Meu Currículo"
+  url: "files/curriculo.pdf"
 
 # Show your badges
 # You can show your verifiable certificates from https://www.credly.com.
@@ -83,17 +79,17 @@ badges:
 #  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
 
 - type: soft-skill-indicator
-  name: Proactive
+  name: Proativo
   percentage: 85
   color: blue
 
 - type: soft-skill-indicator
-  name: Team Work
+  name: Colaborador
   percentage: 90
   color: pink
 
 - type: soft-skill-indicator
-  name: Ownership
+  name: Determinado
   percentage: 95
   color: green
 
