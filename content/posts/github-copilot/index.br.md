@@ -14,6 +14,8 @@ tags: ["copilot","ai"]
 
 Essa semana a chegada do [Github Copilot](https://copilot.github.com/ "Github Copilot") agitou a comunidade dos desenvolvedores de software por seu funcionamento bastante impressionante ~~apesar de ainda imperfeito~~, **mas será que a comunidade ficou preocupada como deveria?**
 
+[comment]: {{< twitter user="github" id="1409883156333879300" >}}
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Meet GitHub Copilot - your AI pair programmer. <a href="https://t.co/eWPueAXTFt">https://t.co/eWPueAXTFt</a> <a href="https://t.co/NPua5K2vFS">pic.twitter.com/NPua5K2vFS</a></p>— GitHub (@github) <a href="https://twitter.com/github/status/1409883156333879300?ref_src=twsrc%5Etfw">June 29, 2021</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 A [OpenAI](https://openai.com/ "OpenAI") e o [GitHub](https://github.com/ "GitHub") anunciaram o **technical preview** da IA que promete ser o seu novo **pair programmer**. O `Copilot` funciona como uma extensão as IDEs, compativível até agora com o VSCode, semelhante as ferramentas para autocomplete de código alimentada por IAs como o [Tabnine](https://www.tabnine.com/ "Tabnine"), porém com diferenças fundamentais.
@@ -22,7 +24,7 @@ A [OpenAI](https://openai.com/ "OpenAI") e o [GitHub](https://github.com/ "GitHu
 
 A ferramenta é fruto do investimento de [1 bilhão de doláres](https://news.microsoft.com/2019/07/22/openai-forms-exclusive-computing-partnership-with-microsoft-to-build-new-azure-ai-supercomputing-technologies/) da  [Microsoft](https://www.microsoft.com/ "Microsoft") na OpenAI, uma empresa especializada no desenvolvimento e pesquisa de `Artificial General Intelligence`. "O `Copilot` preenche automaticamente trechos de código, sugere novas linhas e pode até mesmo escrever funções inteiras com base na descrição fornecida", disse o CEO do Github, Nat Friedman, em um [blog post](https://github.blog/2021-06-29-introducing-github-copilot-ai-pair-programmer/ "blog post").
 
-![Github Copilot](https://copilot.github.com/diagram.png)
+![Github Copilot](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*FkEI-48G2fKcC6K-)
 
 Em sua essência, o `Copilot` usa um novo algoritmo de geração de código da OpenAI chamado `Codex`. O CEO da OpenAI, Greg Brockman, o descreve como descendente da GPT-3, mas com foco em geração de código. O algoritmo `Codex` foi treinado em terabytes de código público extraído do GitHub e [StackOverflow](https://stackoverflow.com/ "StackOverflow"). **Isso dá à ferramenta a capacidade de escrever código baseado em contexto com precisão sem precedentes.**
 
@@ -48,7 +50,7 @@ A princípio você pode rejeitar a ideia de que seu emprego vai ser tomado por u
 
 Errado. A gente tende a se prender a uma mentira confortável para ter um falso senso de segurança, mas na realidade **a automação cognitiva já vem acontecendo de longa data**, como é explicado neste excelente vídeo do canal [CGP Grey](https://www.youtube.com/user/cgpgrey).
 
-{% include video id="7Pq-S557XQU" provider="youtube" %}
+{{< youtube id="7Pq-S557XQU" >}}
 
 Por mais especializada que seja uma mão de obra, ela acaba sendo substituída, **a automação é inevitável**. Afinal, ninguém precisa de uma solução top de linha 100% do tempo, muitas vezes uma solução mediana é suficiente. Diversos exemplos semelhantes já aconteceram, e por isso, em uma era onde código pode ser gerado por IAs, **a entrada no mercado de trabalho se tornará cada vez mais difícil.**
 
@@ -56,7 +58,7 @@ Por mais especializada que seja uma mão de obra, ela acaba sendo substituída, 
 
 O paralelo entre a inevitabilidade da automação, e o que a IA desenvolvida para o Github Copilot representam é muito bem traçada neste vídeo do canal [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA). E após analisar o passado, fica bem mais difícil acreditar em um futuro otimista.
 
-{% include video id="4duqI8WyfqE" provider="youtube" %}
+{{< youtube id="4duqI8WyfqE" >}}
 
 Por enquanto, a ferramenta será usada para auxiliar os programadores a desempenhar sua função melhor, porém em um futuro não tão distante a IA terá aprendido e superado seus próprios criadores. Se de fato estamos "cavando nossas próprias covas" em direção a um futuro distópico para as vagas em programação, somente o tempo dirá.
 

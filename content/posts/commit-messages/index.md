@@ -36,7 +36,7 @@ Do you know when you get so messed up when writing a message because nothing des
 
 Commits that encompass many changes are bad versioning practice, and the confusion in creating a message already indicates this. The logic of the changes must be divided into [atoms](https://www.freshconsulting.com/atomic-commits/), very simple units that implement a single functionality or correct a specific error. And commits are an instance of these changes, a simplified representation of what the complete logic represents.
 
-In future posts I will talk about how to use [GIT](/tags/#git) tool efficiently and to your advantage, exemplifying when, where and how to commit.
+In future posts I will talk about how to use [GIT](https://git-scm.com/) tool efficiently and to your advantage, exemplifying when, where and how to commit.
 
 * **Imprudence**
 
